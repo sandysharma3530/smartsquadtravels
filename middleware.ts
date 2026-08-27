@@ -6,10 +6,9 @@ import {
 } from "@/lib/admin-auth";
 
 export async function middleware(request: NextRequest) {
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set("x-pathname", request.nextUrl.pathname);
-
   const { pathname } = request.nextUrl;
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-pathname", pathname);
   const isAdminPage = pathname.startsWith("/sstadmin");
   const isAdminApi = pathname.startsWith("/api/admin");
   const isLoginPage = pathname === "/sstadmin/login";
@@ -48,5 +47,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|images/|icon.png|apple-icon.png).*)"],
+  matcher: ["/sstadmin", "/sstadmin/:path*", "/api/admin/:path*"],
 };

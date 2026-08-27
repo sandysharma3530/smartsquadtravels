@@ -16,7 +16,7 @@ export default async function AdminLayout({
 }) {
   const pathname = (await headers()).get("x-pathname") || "";
   if (pathname === "/sstadmin/login") {
-    return children;
+    return <main id="main-content">{children}</main>;
   }
 
   const { backend } = await readBundle();

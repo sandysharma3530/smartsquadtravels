@@ -89,21 +89,33 @@ async function main() {
     .png()
     .toFile(path.join(root, "public/images/brand/logo-full-sm.png"));
 
+  const headerLogo = path.join(root, "public/images/brand/logo-header.png");
+  const iconSource = fs.existsSync(headerLogo) ? headerLogo : src;
+  const navy = { r: 6, g: 27, b: 54, alpha: 1 };
+
   const iconJobs = [
+    ["public/images/brand/favicon-32.png", 32],
+    ["public/images/brand/favicon-48.png", 48],
     ["public/images/icon-512.png", 512],
     ["public/images/icon-192.png", 192],
     ["public/images/apple-touch-icon.png", 180],
-    ["app/icon.png", 512],
-    ["app/apple-icon.png", 180],
   ];
 
   for (const [rel, size] of iconJobs) {
-    await sharp(src)
+    const inner = Math.max(1, Math.round(size * 0.92));
+    const resized = await sharp(iconSource)
       .rotate()
-      .resize(size, size, {
-        fit: "contain",
-        background: { r: 255, g: 255, b: 255, alpha: 1 },
+      .resize(inner, inner, {
+        fit: "inside",
+        background: { r: 0, g: 0, b: 0, alpha: 0 },
       })
+      .png()
+      .toBuffer();
+
+    await sharp({
+      create: { width: size, height: size, channels: 4, background: navy },
+    })
+      .composite([{ input: resized, gravity: "centre" }])
       .png()
       .toFile(path.join(root, rel));
   }

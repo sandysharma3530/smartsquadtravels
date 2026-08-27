@@ -7,6 +7,8 @@ import {
   type ImageUploadFolder,
   type ImageUploadVariant,
 } from "@/lib/cms/image-optimize";
+import { processBrandLogo } from "@/lib/cms/process-logo";
+import type { CmsBrandLogo } from "@/lib/cms/types";
 import { assertPersistentBackend } from "@/lib/supabase";
 
 export const runtime = "nodejs";
@@ -18,6 +20,7 @@ const FOLDERS = new Set<ImageUploadFolder>([
   "blog",
   "hero",
   "uploads",
+  "brand",
 ]);
 
 const VARIANTS = new Set<ImageUploadVariant>([
@@ -25,6 +28,7 @@ const VARIANTS = new Set<ImageUploadVariant>([
   "gallery",
   "hero",
   "general",
+  "logo",
 ]);
 
 function parseFolder(value: FormDataEntryValue | null): ImageUploadFolder {
@@ -63,6 +67,13 @@ export async function POST(request: Request) {
       );
     }
 
+    if (variant === "logo" && files.length > 1) {
+      return NextResponse.json(
+        { error: "Upload one logo file at a time." },
+        { status: 400 },
+      );
+    }
+
     const maxBytes = getMaxInputBytes();
     const uploaded: Array<{
       url: string;
@@ -72,6 +83,7 @@ export async function POST(request: Request) {
       quality: number;
       storage: "supabase" | "filesystem";
       originalName: string;
+      logo?: CmsBrandLogo;
     }> = [];
 
     for (const file of files) {
@@ -89,6 +101,48 @@ export async function POST(request: Request) {
       }
 
       const input = Buffer.from(await file.arrayBuffer());
+
+      if (variant === "logo") {
+        const processed = await processBrandLogo(input);
+        const keys = [
+          "source",
+          "header",
+          "mark",
+          "favicon",
+          "apple",
+          "icon192",
+          "icon512",
+        ] as const;
+        const logo = {} as CmsBrandLogo;
+        let storage: "supabase" | "filesystem" = "filesystem";
+
+        for (const key of keys) {
+          const stored = await storeOptimizedImage({
+            buffer: processed[key].buffer,
+            folder: "brand",
+            originalName: `logo-${key}.png`,
+            contentType: "image/png",
+            extension: "png",
+          });
+          logo[key] = stored.url;
+          storage = stored.storage;
+        }
+        logo.headerWidth = processed.header.width;
+        logo.headerHeight = processed.header.height;
+
+        uploaded.push({
+          url: logo.header,
+          width: processed.header.width,
+          height: processed.header.height,
+          bytes: processed.header.buffer.byteLength,
+          quality: 100,
+          storage,
+          originalName: file.name,
+          logo,
+        });
+        continue;
+      }
+
       const optimized = await optimizeImageBuffer(input, variant);
       const stored = await storeOptimizedImage({
         buffer: optimized.buffer,

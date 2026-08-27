@@ -10,12 +10,13 @@ export type ImageUploadFolder =
   | "gallery"
   | "blog"
   | "hero"
-  | "uploads";
+  | "uploads"
+  | "brand";
 
-export type ImageUploadVariant = "cover" | "gallery" | "hero" | "general";
+export type ImageUploadVariant = "cover" | "gallery" | "hero" | "general" | "logo";
 
 const PROFILES: Record<
-  ImageUploadVariant,
+  Exclude<ImageUploadVariant, "logo">,
   { width: number; height: number; quality: number }
 > = {
   cover: { width: 1920, height: 1280, quality: 82 },
@@ -57,7 +58,8 @@ export async function optimizeImageBuffer(
   input: Buffer,
   variant: ImageUploadVariant = "general",
 ) {
-  const profile = PROFILES[variant] || PROFILES.general;
+  const profile =
+    variant === "logo" ? PROFILES.general : PROFILES[variant] || PROFILES.general;
   const image = sharp(input, { failOn: "none" }).rotate();
   const meta = await image.metadata();
 

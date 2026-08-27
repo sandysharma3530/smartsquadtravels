@@ -11,6 +11,7 @@ import { getVisibleNavItems } from "@/lib/cms/types";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Logo } from "@/components/shared/Logo";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
 type MobileNavigationProps = {
   open: boolean;
@@ -92,6 +93,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
 
   const showWhatsApp = isConfigured(site.whatsappNumber);
   const navItems = getVisibleNavItems(site.nav);
+  const logo = resolveBrandLogo(site);
 
   return (
     <>
@@ -117,7 +119,13 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
         inert={open ? undefined : true}
       >
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-          <Logo variant="light" showTagline={false} />
+          <Logo
+            variant="light"
+            showTagline={false}
+            src={logo.header}
+            width={logo.headerWidth}
+            height={logo.headerHeight}
+          />
           <button
             ref={closeButtonRef}
             type="button"

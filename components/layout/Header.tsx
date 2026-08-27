@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Logo } from "@/components/shared/Logo";
 import { MobileNavigation } from "@/components/layout/MobileNavigation";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
 function isNavActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
@@ -66,12 +67,20 @@ export function Header() {
   const phoneConfigured = isConfigured(site.phoneInternational);
   const socialLinks = getSocialLinks(site);
   const navItems = getVisibleNavItems(site.nav);
+  const logo = resolveBrandLogo(site);
 
   return (
     <>
       <header className="site-header sticky top-0 z-50 border-b border-white/10 bg-navy shadow-md">
         <div className="container-site flex h-[var(--header-height)] items-center justify-between gap-3 xl:gap-4">
-          <Logo variant="light" className="shrink-0" />
+          <Logo
+            variant="light"
+            className="shrink-0"
+            priority
+            src={logo.header}
+            width={logo.headerWidth}
+            height={logo.headerHeight}
+          />
 
           <nav
             className="site-nav hidden min-w-0 flex-1 items-center justify-center lg:flex"

@@ -3,6 +3,7 @@ import {
   resolveHomeSections,
   type CmsBundle,
 } from "@/lib/cms/types";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
 function isUsableSrc(src: unknown): src is string {
   return typeof src === "string" && src.trim().length > 0;
@@ -12,6 +13,10 @@ function isUsableSrc(src: unknown): src is string {
 export function sanitizePublicBundle(bundle: CmsBundle): CmsBundle {
   return {
     ...bundle,
+    site: {
+      ...bundle.site,
+      logo: resolveBrandLogo(bundle.site),
+    },
     home: {
       ...bundle.home,
       sections: resolveHomeSections(bundle.home?.sections),

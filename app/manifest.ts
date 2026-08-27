@@ -1,11 +1,15 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/content/site-config";
+import { getCmsSite } from "@/lib/cms/content";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const site = await getCmsSite();
+  const logo = resolveBrandLogo(site);
+
   return {
-    name: siteConfig.businessName,
+    name: site.businessName,
     short_name: "Smart Squad",
-    description: siteConfig.shortDescription,
+    description: site.shortDescription,
     start_url: "/",
     display: "standalone",
     background_color: "#061b36",
@@ -15,19 +19,19 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "en-IN",
     icons: [
       {
-        src: "/images/icon-192.png",
+        src: logo.icon192,
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/images/icon-512.png",
+        src: logo.icon512,
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/images/icon-512.png",
+        src: logo.icon512,
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",

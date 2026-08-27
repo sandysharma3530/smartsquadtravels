@@ -14,8 +14,10 @@ import {
 import type { FleetImageCategory } from "@/content/fleet";
 import { CheckInput, TextArea, TextInput } from "@/components/admin/fields";
 import { ImageUploadField } from "@/components/admin/ImageUploadField";
+import { LogoUploadField } from "@/components/admin/LogoUploadField";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { DEFAULT_BRAND_LOGO } from "@/lib/cms/brand-logo";
 
 type Section =
   | "site"
@@ -260,6 +262,13 @@ function SiteEditor({
 }) {
   return (
     <>
+      <Card title="Website logo">
+        <LogoUploadField
+          value={site.logo}
+          onUploaded={(logo) => onChange({ ...site, logo })}
+          onReset={() => onChange({ ...site, logo: { ...DEFAULT_BRAND_LOGO } })}
+        />
+      </Card>
       <Card title="Brand">
         <div className="grid gap-4 md:grid-cols-2">
           <TextInput label="Business name" value={site.businessName} onChange={(e) => onChange({ ...site, businessName: e.target.value })} />

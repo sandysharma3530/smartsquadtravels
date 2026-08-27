@@ -104,7 +104,7 @@ export function AdminShell({
             </Link>
           ))}
         </div>
-        <main className="px-4 py-6 md:px-8 md:py-8">
+        <main id="main-content" className="px-4 py-6 md:px-8 md:py-8">
           {storageWarning ? (
             <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">
               {storageWarning}

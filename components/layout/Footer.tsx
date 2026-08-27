@@ -10,6 +10,7 @@ import { hasGoogleReviewsConfigured } from "@/content/site-config";
 import { isConfigured } from "@/lib/placeholders";
 import { getPublicContent } from "@/lib/cms/content";
 import { getVisibleNavItems, type CmsSite } from "@/lib/cms/types";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 import { Logo } from "@/components/shared/Logo";
 
 type FooterLinkGroupProps = {
@@ -83,13 +84,20 @@ export async function Footer() {
   const socialLinks = getSocialLinks(site);
   const showGoogleReviews = hasGoogleReviewsConfigured(site);
   const currentYear = new Date().getFullYear();
+  const logo = resolveBrandLogo(site);
 
   return (
     <footer className="bg-navy text-white">
       <div className="container-site section-pad">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
           <div className="space-y-4 md:col-span-2 xl:col-span-2">
-            <Logo variant="light" showTagline={false} />
+            <Logo
+              variant="light"
+              showTagline={false}
+              src={logo.header}
+              width={logo.headerWidth}
+              height={logo.headerHeight}
+            />
             <p className="text-sm font-medium text-teal-light">{site.tagline}</p>
             <p className="max-w-sm text-sm leading-relaxed text-white/75">
               {site.shortDescription}

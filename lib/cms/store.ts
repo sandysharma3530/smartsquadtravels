@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { CMS_KEYS, type CmsBundle, type CmsKey, type CmsStorageBackend } from "@/lib/cms/types";
 import { getSeedBundle } from "@/lib/cms/seed";
 import { isEphemeralHost, PERSISTENT_STORAGE_HELP } from "@/lib/runtime";
@@ -10,13 +10,20 @@ const DRAFT_DIR = path.join(DATA_DIR, "drafts");
 
 export type CmsWriteMode = "published" | "draft";
 
+let supabaseClient: SupabaseClient | null | undefined;
+
 function supabaseAdmin() {
+  if (supabaseClient !== undefined) return supabaseClient;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) return null;
-  return createClient(url, key, {
+  if (!url || !key) {
+    supabaseClient = null;
+    return null;
+  }
+  supabaseClient = createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },
   });
+  return supabaseClient;
 }
 
 export function getPreferredBackend(): CmsStorageBackend {
@@ -203,18 +210,31 @@ export async function readBundle(options?: {
   let usedStored = false;
   const draftKeys: CmsKey[] = [];
 
-  for (const key of CMS_KEYS) {
-    const published = await readDocument(key, "published");
-    if (published != null) {
-      usedStored = true;
-      (seed as Record<string, unknown>)[key] = published;
-    }
+  const publishedDocs = await Promise.all(
+    CMS_KEYS.map(async (key) => ({
+      key,
+      value: await readDocument(key, "published"),
+    })),
+  );
 
-    if (options?.includeDrafts) {
-      const draft = await readDocument(key, "draft");
-      if (draft != null) {
+  for (const { key, value } of publishedDocs) {
+    if (value != null) {
+      usedStored = true;
+      (seed as Record<string, unknown>)[key] = value;
+    }
+  }
+
+  if (options?.includeDrafts) {
+    const draftDocs = await Promise.all(
+      CMS_KEYS.map(async (key) => ({
+        key,
+        value: await readDocument(key, "draft"),
+      })),
+    );
+    for (const { key, value } of draftDocs) {
+      if (value != null) {
         draftKeys.push(key);
-        (seed as Record<string, unknown>)[key] = draft;
+        (seed as Record<string, unknown>)[key] = value;
       }
     }
   }

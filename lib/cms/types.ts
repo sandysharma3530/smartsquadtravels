@@ -45,6 +45,18 @@ export function isNavHrefEnabled(
   return isNavItemEnabled(item);
 }
 
+export type CmsBrandLogo = {
+  source: string;
+  header: string;
+  headerWidth?: number;
+  headerHeight?: number;
+  mark: string;
+  favicon: string;
+  apple: string;
+  icon192: string;
+  icon512: string;
+};
+
 export type CmsSite = {
   businessName: string;
   tagline: string;
@@ -95,6 +107,7 @@ export type CmsSite = {
   primaryVehicle: string;
   siteUrl: string;
   nav: CmsNavItem[];
+  logo?: CmsBrandLogo;
 };
 
 export type CmsHeroSlide = {

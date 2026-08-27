@@ -5,6 +5,8 @@ import type { Destination } from "@/content/destinations";
 import type { FleetVehicle } from "@/content/fleet";
 import type { BlogPost } from "@/content/blog";
 import type { FaqItem } from "@/content/faqs";
+import type { CmsSite } from "@/lib/cms/types";
+import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
 export const defaultTitle =
   "Smart Squad Travels | Luxury Force Traveller & Urbania Rental in Delhi NCR";
@@ -143,38 +145,39 @@ export function createMetadata({
   };
 }
 
-export function organizationJsonLd() {
+export function organizationJsonLd(site: CmsSite = siteConfig as unknown as CmsSite) {
+  const logo = resolveBrandLogo(site);
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": `${siteConfig.siteUrl}/#organization`,
-    name: siteConfig.businessName,
-    legalName: siteConfig.legalName,
-    url: siteConfig.siteUrl,
+    "@id": `${site.siteUrl}/#organization`,
+    name: site.businessName,
+    legalName: site.legalName,
+    url: site.siteUrl,
     logo: {
       "@type": "ImageObject",
-      url: absoluteUrl("/images/logo.png"),
+      url: absoluteUrl(logo.header),
     },
     image: absoluteUrl("/images/og-default.jpg"),
-    description: siteConfig.shortDescription,
-    slogan: siteConfig.tagline,
-    email: isConfigured(siteConfig.publicEmail)
-      ? siteConfig.publicEmail
+    description: site.shortDescription,
+    slogan: site.tagline,
+    email: isConfigured(site.publicEmail)
+      ? site.publicEmail
       : undefined,
-    telephone: isConfigured(siteConfig.phoneInternational)
-      ? siteConfig.phoneInternational
+    telephone: isConfigured(site.phoneInternational)
+      ? site.phoneInternational
       : undefined,
     sameAs: [
-      siteConfig.social.facebookUrl,
-      siteConfig.social.instagramUrl,
-      siteConfig.social.youtubeUrl,
-      siteConfig.googleBusinessUrl,
+      site.social.facebookUrl,
+      site.social.instagramUrl,
+      site.social.youtubeUrl,
+      site.googleBusinessUrl,
     ].filter((url) => isConfigured(url)),
-    contactPoint: isConfigured(siteConfig.phoneInternational)
+    contactPoint: isConfigured(site.phoneInternational)
       ? [
           {
             "@type": "ContactPoint",
-            telephone: siteConfig.phoneInternational,
+            telephone: site.phoneInternational,
             contactType: "customer service",
             areaServed: "IN",
             availableLanguage: ["English", "Hindi"],
@@ -184,14 +187,15 @@ export function organizationJsonLd() {
   };
 }
 
-export function localBusinessJsonLd() {
+export function localBusinessJsonLd(site: CmsSite = siteConfig as unknown as CmsSite) {
+  const logo = resolveBrandLogo(site);
   const rating =
-    siteConfig.trustStatistics.googleRating != null &&
-    siteConfig.trustStatistics.googleReviewCount != null
+    site.trustStatistics.googleRating != null &&
+    site.trustStatistics.googleReviewCount != null
       ? {
           "@type": "AggregateRating",
-          ratingValue: siteConfig.trustStatistics.googleRating,
-          reviewCount: siteConfig.trustStatistics.googleReviewCount,
+          ratingValue: site.trustStatistics.googleRating,
+          reviewCount: site.trustStatistics.googleReviewCount,
           bestRating: 5,
           worstRating: 1,
         }
@@ -200,15 +204,15 @@ export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "TravelAgency"],
-    "@id": `${siteConfig.siteUrl}/#localbusiness`,
-    name: siteConfig.businessName,
-    description: siteConfig.shortDescription,
-    url: siteConfig.siteUrl,
+    "@id": `${site.siteUrl}/#localbusiness`,
+    name: site.businessName,
+    description: site.shortDescription,
+    url: site.siteUrl,
     image: [
       absoluteUrl("/images/og-default.jpg"),
       absoluteUrl("/images/fleet/traveller/cover.jpg"),
     ],
-    logo: absoluteUrl("/images/logo.png"),
+    logo: absoluteUrl(logo.header),
     telephone: isConfigured(siteConfig.phoneInternational)
       ? siteConfig.phoneInternational
       : undefined,
@@ -388,7 +392,7 @@ export function articleJsonLd(post: BlogPost) {
       name: siteConfig.businessName,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/images/logo.png"),
+        url: absoluteUrl(resolveBrandLogo().header),
       },
     },
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),

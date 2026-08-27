@@ -9,6 +9,7 @@ import { blogPosts } from "@/content/blog";
 import { galleryCategories, galleryItems } from "@/content/gallery";
 import { defaultPages } from "@/content/pages";
 import { DEFAULT_HOME_SECTIONS, type CmsBundle } from "@/lib/cms/types";
+import { DEFAULT_BRAND_LOGO } from "@/lib/cms/brand-logo";
 
 function clone<T>(value: unknown): T {
   return JSON.parse(JSON.stringify(value)) as T;
@@ -17,6 +18,7 @@ function clone<T>(value: unknown): T {
 export function getSeedBundle(): CmsBundle {
   const site = clone(siteConfig) as unknown as CmsBundle["site"];
   site.nav = siteConfig.nav.map((item) => ({ ...item }));
+  site.logo = { ...DEFAULT_BRAND_LOGO };
 
   return {
     site,

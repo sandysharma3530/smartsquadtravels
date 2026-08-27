@@ -1,8 +1,9 @@
 import { cache } from "react";
-import { unstable_noStore as noStore } from "next/cache";
+import { unstable_cache } from "next/cache";
 import { readBundle } from "@/lib/cms/store";
 import { getSeedBundle } from "@/lib/cms/seed";
 import { sanitizePublicBundle } from "@/lib/cms/sanitize";
+import { CMS_PUBLIC_TAG } from "@/lib/cms/revalidate-public";
 import { isNavHrefEnabled, type CmsBundle } from "@/lib/cms/types";
 
 async function loadPublishedBundle(): Promise<CmsBundle> {
@@ -20,11 +21,16 @@ export async function getPublishedContent(): Promise<CmsBundle> {
   }
 }
 
+const getCachedPublishedContent = unstable_cache(
+  async () => getPublishedContent(),
+  ["cms-public-bundle"],
+  { tags: [CMS_PUBLIC_TAG], revalidate: 120 },
+);
+
 /** Public site always uses published content (never drafts). */
 export const getPublicContent = cache(async (): Promise<CmsBundle> => {
-  noStore();
   try {
-    return await getPublishedContent();
+    return await getCachedPublishedContent();
   } catch (error) {
     console.error("[cms] content load failed; serving seed", error);
     return sanitizePublicBundle(getSeedBundle());
