@@ -16,8 +16,8 @@ export async function DestinationsSection({ className }: DestinationsSectionProp
     <section className={cn("section-pad", className)}>
       <div className="container-site">
         <SectionHeader
-          title="Popular Destinations"
-          subtitle="Popular locations we serve across North India."
+          title="Where we can take you"
+          subtitle="Hill stations, temple towns and city breaks from Ghaziabad. Open a place to see how the drive usually works, then ask for a quote."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -31,7 +31,7 @@ export async function DestinationsSection({ className }: DestinationsSectionProp
             href="/destinations"
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            View All Destinations
+            See every route
           </Link>
         </div>
       </div>

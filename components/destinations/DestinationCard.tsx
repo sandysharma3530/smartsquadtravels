@@ -58,7 +58,7 @@ export function DestinationCard({
 
           <span className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-navy/35 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
             <span className="rounded-xl bg-teal px-4 py-2 text-sm font-semibold text-white shadow-lg">
-              Explore destination
+              See this place
             </span>
           </span>
         </div>
@@ -69,7 +69,7 @@ export function DestinationCard({
           href={quoteHref}
           className="rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-navy shadow-md hover:bg-teal hover:text-white focus-visible:opacity-100"
         >
-          Request Quote
+          Get a quote
         </Link>
       </div>
     </article>

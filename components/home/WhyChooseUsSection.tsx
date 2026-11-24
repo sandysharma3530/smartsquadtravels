@@ -20,8 +20,8 @@ export async function WhyChooseUsSection({ className }: WhyChooseUsSectionProps)
     <section className={cn("section-pad", className)}>
       <div className="container-site">
         <SectionHeader
-          title="Why Choose Us"
-          subtitle="Reliable group transportation focused on comfort, transparency and flexible destination planning."
+          title="Why travel with us"
+          subtitle="A clear quote before you leave, a vehicle that fits your group, and the same person on WhatsApp on the day."
         />
 
         {showStats ? (

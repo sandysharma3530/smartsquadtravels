@@ -2,18 +2,18 @@
   "heroSlides": [
     {
       "id": 1,
-      "eyebrow": "COMFORTABLE JOURNEYS.",
+      "eyebrow": "BASED IN GHAZIABAD",
       "headingLines": [
         {
-          "text": "MEMORABLE",
+          "text": "YOUR GROUP.",
           "accent": false
         },
         {
-          "text": "EXPERIENCES.",
+          "text": "ONE VEHICLE.",
           "accent": true
         }
       ],
-      "description": "Force Traveller rental for family trips, corporate travel, weddings, airport transfers, pilgrimages and customized outstation journeys.",
+      "description": "A Force Traveller or Force Urbania for a family outing, office day, wedding or temple trip from Ghaziabad, Noida or Delhi. You get the vehicle, the driver and a clear price for the days on the road.",
       "image": "/images/hero/slide-1.jpg",
       "imageAlt": "Force Traveller van ready for a scenic North India group journey",
       "showTrustPoints": true,
@@ -22,18 +22,18 @@
     },
     {
       "id": 2,
-      "eyebrow": "TRAVEL SMART.",
+      "eyebrow": "EASY TO PLAN",
       "headingLines": [
         {
-          "text": "TRAVEL TOGETHER.",
+          "text": "TELL US THE DATE.",
           "accent": false
         },
         {
-          "text": "TRAVEL COMFORTABLY.",
+          "text": "WE'LL SEND A PRICE.",
           "accent": true
         }
       ],
-      "description": "Reliable group transportation for family vacations, corporate outings, religious journeys and special occasions.",
+      "description": "Share when you are leaving, where to pick everyone up, and how many people are coming. We will suggest a vehicle that fits and a price for that trip.",
       "image": "/images/hero/slide-2.jpg",
       "imageAlt": "Comfortable group travel vehicle for family and corporate trips",
       "showTrustPoints": false,
@@ -42,18 +42,18 @@
     },
     {
       "id": 3,
-      "eyebrow": "CUSTOM QUOTES.",
+      "eyebrow": "NORTH INDIA",
       "headingLines": [
         {
-          "text": "EXPLORE NORTH INDIA",
+          "text": "HILLS, TEMPLES",
           "accent": false
         },
         {
-          "text": "YOUR WAY.",
+          "text": "AND CITY BREAKS.",
           "accent": true
         }
       ],
-      "description": "Request a customized quote for destinations across Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
+      "description": "We drive groups to Uttarakhand, Himachal, Rajasthan, Uttar Pradesh and Jammu & Kashmir, at a pace that suits the people in the vehicle.",
       "image": "/images/hero/slide-3.jpg",
       "imageAlt": "North India mountain landscape for customized outstation travel",
       "showTrustPoints": false,
@@ -62,18 +62,18 @@
     },
     {
       "id": 4,
-      "eyebrow": "PREMIUM RIDES.",
+      "eyebrow": "CHOOSE YOUR CABIN",
       "headingLines": [
         {
-          "text": "FORCE URBANIA",
+          "text": "21 SEATS,",
           "accent": false
         },
         {
-          "text": "FOR SPECIAL JOURNEYS.",
+          "text": "OR A QUIETER RIDE.",
           "accent": true
         }
       ],
-      "description": "Hire a Force Urbania for weddings, corporate travel and comfortable outstation trips from Delhi NCR.",
+      "description": "The 21-seat Traveller fits a full family, class or wedding party. Ask for the Urbania when the group is smaller and you want more comfort on a long day.",
       "image": "/images/fleet/urbania/cover.jpg",
       "imageAlt": "Force Urbania luxury van for premium group travel",
       "showTrustPoints": false,
@@ -84,54 +84,54 @@
   "heroTrustPoints": [
     {
       "id": "gps",
-      "label": "GPS Tracking",
+      "label": "Route shared before you leave",
       "icon": "satellite"
     },
     {
       "id": "cctv",
-      "label": "CCTV Enabled",
+      "label": "Cabin camera when fitted",
       "icon": "cctv"
     },
     {
       "id": "drivers",
-      "label": "Experienced Drivers",
+      "label": "Driver knows your stops",
       "icon": "user"
     },
     {
       "id": "vehicles",
-      "label": "Well-Maintained Vehicles",
+      "label": "Seats for your group",
       "icon": "shield"
     }
   ],
   "trustBarItems": [
     {
       "id": "support",
-      "label": "24x7 Customer Support",
+      "label": "WhatsApp replies every day",
       "icon": "headset"
     },
     {
       "id": "door",
-      "label": "Door-to-Door Pickup & Drop",
+      "label": "Pickup in Ghaziabad, Noida or Delhi",
       "icon": "mapPin"
     },
     {
       "id": "pricing",
-      "label": "Transparent Pricing",
+      "label": "Quote based on your route",
       "icon": "receipt"
     },
     {
       "id": "ontime",
-      "label": "On-Time Service",
+      "label": "You choose the start time",
       "icon": "clock"
     },
     {
       "id": "clean",
-      "label": "Clean & Sanitized Vehicles",
+      "label": "Clean cabin when you board",
       "icon": "sparkles"
     },
     {
       "id": "safe",
-      "label": "Safe, Comfortable & Reliable",
+      "label": "Hill roads driven in daylight",
       "icon": "shieldCheck"
     }
   ],

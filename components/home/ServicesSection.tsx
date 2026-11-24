@@ -44,8 +44,8 @@ export async function ServicesSection({ className }: ServicesSectionProps) {
     <section className={cn("section-pad bg-bg-light", className)}>
       <div className="container-site">
         <SectionHeader
-          title="Our Services"
-          subtitle="Group transportation solutions tailored to your journey — request a custom quote for every trip type."
+          title="Trips we arrange"
+          subtitle="Family weekends, office days, weddings, airport groups, temple visits and school trips. The quote covers the vehicle and the driver."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -70,7 +70,7 @@ export async function ServicesSection({ className }: ServicesSectionProps) {
                   href={`/contact?tripType=${encodeURIComponent(tripType)}`}
                   className="mt-5 inline-flex text-sm font-semibold text-teal hover:text-teal-light"
                 >
-                  Request Quote →
+                  Price this trip →
                 </Link>
               </article>
             );

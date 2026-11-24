@@ -10,40 +10,40 @@ export type FaqItem = {
 
 export const faqs: FaqItem[] = [
   {
-    id: "what-vehicles",
-    question: "Which vehicles does Smart Squad Travels offer?",
+    id: "where-based",
+    question: "Where are you based?",
     answer:
-      "We arrange comfortable group transportation with Force Traveller (21-seater) and Force Urbania options, based on availability and your passenger count. Request a custom quote for your preferred vehicle.",
+      "Our office is at Panchsheel Greens, Ghaziabad. We can pick the group up there, or from Noida, Greater Noida and other Delhi addresses if people are starting from more than one place.",
   },
   {
-    id: "fixed-packages",
-    question: "Do you sell fixed tour packages with set prices?",
+    id: "which-vehicle",
+    question: "Should I choose the Urbania or the Traveller?",
     answer:
-      "No. We do not sell fixed tour packages with package prices, hotel inclusions or set durations. Destinations are locations we serve — every trip is planned around your dates, route and group size with a customized quotation.",
+      "Choose the Force Urbania when the group is smaller and the day on the road is long. For a full family, a class or a wedding party, the 21-seat Force Traveller is usually the better fit. Tell us how many people are coming and we will recommend one.",
   },
   {
-    id: "service-areas",
-    question: "Which areas do you serve?",
+    id: "two-pickups",
+    question: "Can you pick us up from two different places?",
     answer:
-      "Primary pickup areas include Noida, Greater Noida and Delhi NCR, with outstation journeys across North India including Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
+      "Yes, if both addresses are in Ghaziabad, Noida or Delhi and you tell us the order. Extra stops and waiting time are included in the quote, so there is no surprise on the day.",
   },
   {
-    id: "how-to-book",
-    question: "How do I request a quotation?",
+    id: "hotels",
+    question: "Do you arrange hotels or a sightseeing package?",
     answer:
-      "Use the Quick Enquiry form on the website, or contact us by phone or WhatsApp with your travel date, pickup location, destination, passenger count and preferred vehicle. We will review your request and get back to you shortly.",
+      "No. The quote covers the vehicle, the driver and the days on the road. You arrange where you stay, where you eat, and which places you enter.",
   },
   {
-    id: "trip-types",
-    question: "What types of trips can you support?",
+    id: "how-early",
+    question: "How early should I get in touch for a hill trip?",
     answer:
-      "We support family and group trips, corporate travel, wedding transportation, airport transfers, religious journeys, school and college trips, and customized outstation travel.",
+      "For a weekend to Nainital or Mussoorie, a few days is often enough. For Manali, Shimla, Kedarnath or a Kashmir route, write to us as soon as the dates are fixed so the driving days are not rushed.",
   },
   {
-    id: "safety-features",
-    question: "What comfort and safety features are available?",
+    id: "what-to-send",
+    question: "What do you need before you can quote?",
     answer:
-      "Depending on the assigned vehicle, features typically include air conditioning, pushback or recliner seating, GPS tracking, CCTV on equipped vehicles, luggage space and charging points where available. Confirm preferred features when you request a quote.",
+      "The travel date, the pickup point, the destination, a return date if you have one, how many people are coming, and whether you prefer the Traveller or the Urbania. A message is a request for a price, not a confirmed booking.",
   },
 ];
 

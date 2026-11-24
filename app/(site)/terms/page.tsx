@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Terms of Service",
   description:
-    "Terms of service for Smart Squad Travels website and travel enquiry services. General terms for group transportation quotations and bookings.",
+    "Terms for using the Smart Squad Travels website and for vehicle price requests sent from Ghaziabad.",
   path: "/terms",
 });
 
@@ -41,39 +41,38 @@ export default async function TermsPage() {
         <div className="container-site">
           <div className="prose-narrow mx-auto max-w-3xl space-y-6 text-text-main">
             <p className="leading-relaxed text-text-muted">
-              These Terms of Service (&quot;Terms&quot;) govern your use of the
-              {siteConfig.businessName} website and enquiry services. By using
-              this website or submitting an enquiry, you agree to these Terms.
+              These terms cover use of the {siteConfig.businessName} website
+              and the trip requests sent through it. Using the site or sending
+              a form means you accept them.
             </p>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Services</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                {siteConfig.businessName} provides group transportation and
-                Traveller rental coordination services. Quotations are customized
-                based on route, dates, vehicle type and passenger requirements.
-                We do not sell fixed tour packages through this website.
+                {siteConfig.businessName} arranges a Force Traveller or Force
+                Urbania, and the driving that goes with it. Each price follows
+                the route, the dates, the vehicle and how many people are
+                travelling. This website does not sell hotel stays or set
+                sightseeing tours.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-navy">Enquiries &amp; Quotes</h2>
+              <h2 className="text-xl font-bold text-navy">Prices you request</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                Information submitted through enquiry forms is used to prepare
-                quotations. A quote is not a confirmed booking until explicitly
-                accepted by both parties. Vehicle availability, routes and
-                pricing may change based on season, demand and operational
-                factors.
+                Form details are used to prepare a price. That price is not a
+                confirmed booking until both sides accept it. The vehicle, the
+                road and the amount can change with the season, demand and what
+                is actually free on the date.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Bookings &amp; Payments</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                Specific payment terms, cancellation policies and inclusions
-                will be communicated at the time of booking confirmation. Please
-                review your quotation and booking details carefully before
-                confirming travel.
+                Payment, cancellation and what is included are explained when a
+                booking is confirmed. Please read that note before you lock the
+                date.
               </p>
             </div>
 
@@ -82,21 +81,19 @@ export default async function TermsPage() {
                 Travel Responsibility
               </h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                Passengers are responsible for valid identification, permits
-                where required, and compliance with local regulations at
-                destinations. Hill routes, pilgrimage seasons and weather
-                conditions may affect travel plans. We recommend flexible
-                itineraries where practical.
+                Passengers need valid identity papers and any permit the
+                destination requires, and they must follow local rules. Hill
+                roads, yatra dates and weather can change a plan. Build in
+                spare time where you can.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Website Content</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                Destination descriptions, blog articles and sample reviews on
-                this website are for general information only. They do not
-                constitute guarantees about routes, timings or third-party
-                attractions. Always verify local conditions before travel.
+                Destination pages describe how a drive usually works. They are
+                not a promise of a particular road, timing or third-party site.
+                Check local conditions before you travel.
               </p>
             </div>
 
@@ -105,36 +102,33 @@ export default async function TermsPage() {
                 Limitation of Liability
               </h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                To the fullest extent permitted by applicable law,{" "}
-                {siteConfig.businessName} is not liable for indirect,
-                incidental or consequential damages arising from use of this
-                website or travel services, except where liability cannot be
-                excluded by law.
+                As far as the law allows, {siteConfig.businessName} is not
+                responsible for indirect or consequential loss from using this
+                website or the travel service, except where that responsibility
+                cannot legally be set aside.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Governing Law</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                These Terms are governed by the laws of India. Any disputes
-                shall be subject to the jurisdiction of courts in Uttar
-                Pradesh, India, unless otherwise required by applicable law.
+                Indian law applies. Disputes are heard by the courts of Uttar
+                Pradesh, unless a law requires another court.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Changes</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                We may update these Terms at any time. Continued use of the
-                website after changes are posted constitutes acceptance of the
-                revised Terms.
+                These terms can be updated. Using the site after a new version
+                is posted means you accept that version.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Contact</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                Questions about these Terms? Visit our{" "}
+                Questions about these terms can go through our{" "}
                 <Link href="/contact" className="text-teal hover:underline">
                   Contact page
                 </Link>{" "}

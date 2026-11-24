@@ -20,10 +20,10 @@ export const metadata = createMetadata({
   path: "/",
   description: defaultDescription,
   keywords: [
-    "Force Traveller rental Delhi NCR",
+    "Force Traveller hire Ghaziabad",
     "21 seater Traveller Noida",
-    "Force Urbania hire Greater Noida",
-    "group transportation Delhi",
+    "Force Urbania from Ghaziabad",
+    "group vehicle Delhi",
     "outstation Traveller from Noida",
   ],
 });

@@ -23,16 +23,13 @@ export async function ReviewsSection({ className, limit = 3 }: ReviewsSectionPro
     <section className={cn("section-pad bg-bg-light", className)}>
       <div className="container-site">
         <SectionHeader
-          title="What Our Customers Say"
-          subtitle="Feedback from groups who travelled with Smart Squad Travels."
+          title={hasDemoReviews ? "Sample traveller notes" : "What our customers say"}
+          subtitle={
+            hasDemoReviews
+              ? "Examples of the kind of trips we arrange. These are not verified Google reviews."
+              : "Feedback from groups who travelled with Smart Squad Travels."
+          }
         />
-
-        {hasDemoReviews ? (
-          <p className="-mt-6 mb-8 text-center text-sm text-text-muted">
-            Sample reviews shown for demonstration. Replace with verified customer
-            feedback before publishing.
-          </p>
-        ) : null}
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review) => (

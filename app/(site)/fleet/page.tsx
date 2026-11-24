@@ -6,15 +6,15 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Force Traveller & Urbania Fleet",
+  title: "Traveller and Urbania",
   description:
-    "Explore Force Traveller (21-seater) and Force Urbania options for family trips, corporate travel, weddings, pilgrimages and customized outstation journeys from Delhi NCR.",
+    "Compare the 21-seat Force Traveller and the Force Urbania that Smart Squad Travels arranges from Ghaziabad for group trips across North India.",
   path: "/fleet",
   keywords: [
-    "21 seater Force Traveller",
-    "Force Urbania rental",
-    "group van hire Delhi NCR",
-    "Traveller fleet Noida",
+    "21 seater Force Traveller Ghaziabad",
+    "Force Urbania Ghaziabad",
+    "group vehicle Noida",
+    "Traveller hire Delhi",
   ],
 });
 
@@ -36,11 +36,12 @@ export default async function FleetPage() {
             </ol>
           </nav>
           <h1 className="text-3xl font-bold text-white md:text-4xl">
-            Our Fleet
+            Our vehicles
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Comfortable, spacious and well-maintained vehicles for every group
-            journey — request a customized quote based on your route and dates.
+            Choose the 21-seat Traveller for a larger group, or the Urbania
+            when fewer people want a more comfortable ride. The price follows
+            your route. This page does not list fixed packages.
           </p>
         </div>
       </section>
@@ -49,8 +50,8 @@ export default async function FleetPage() {
         <div className="container-site">
           <SectionHeader
             as="h2"
-            title="Choose Your Vehicle"
-            subtitle="Compare seating, features and gallery photos. Pricing is shared as a custom quotation — no fixed packages listed online."
+            title="See them side by side"
+            subtitle="Compare seating and photos here. We will confirm which vehicle is free on your dates before you book."
           />
 
           <div className="grid gap-8 lg:grid-cols-2">

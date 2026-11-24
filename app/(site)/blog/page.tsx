@@ -51,8 +51,8 @@ export default async function BlogPage() {
             Travel Blog
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Helpful guidance for group travel planning from Delhi NCR — general
-            tips only, not fixed package offers.
+            Practical tips for planning a group trip from Delhi NCR. These are
+            guides, not fixed holiday packages.
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default async function BlogPage() {
           <SectionHeader
             as="h2"
             title="Latest Articles"
-            subtitle="Planning tips, safety checklists and destination orientation for group travellers."
+            subtitle="Planning tips, a hill-trip checklist, and short guides to places we drive to."
           />
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

@@ -58,8 +58,7 @@ export function FleetCard({
 
           {!vehicle.owned ? (
             <p className="mt-2 text-xs text-text-muted">
-              Available through our travel network — customized quotes based on
-              your route and dates.
+              Arranged for the dates you send. The quote names the vehicle.
             </p>
           ) : null}
 

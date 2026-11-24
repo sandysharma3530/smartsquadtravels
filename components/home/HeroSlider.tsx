@@ -270,7 +270,7 @@ export function HeroSlider({ children, className, slides, trustPoints }: HeroSli
                           size: "lg",
                         })}
                       >
-                        Get a Quote
+                        Get a quote
                       </Link>
                     )}
                   </div>

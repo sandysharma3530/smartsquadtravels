@@ -89,10 +89,10 @@ export async function sendCustomerAcknowledgementEmail(params: {
 
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#10233D;">
-      <h2 style="color:#061B36;">We received your enquiry</h2>
+      <h2 style="color:#061B36;">We received your trip details</h2>
       <p>Dear ${escapeHtml(params.data.fullName)},</p>
-      <p>${escapeHtml(siteConfig.businessName)} has received your travel enquiry <strong>${escapeHtml(params.reference)}</strong>.</p>
-      <p>Our team will review your request and contact you shortly to discuss a customized quotation. We do not promise an exact response time, but we aim to get back as soon as possible.</p>
+      <p>Thank you for writing to ${escapeHtml(siteConfig.businessName)}. Your reference is <strong>${escapeHtml(params.reference)}</strong>. This email is not a confirmed booking.</p>
+      <p>We have your date and route. Someone from Smart Squad will call or WhatsApp you with a vehicle and a price.</p>
       <p style="color:#667085;">Trip summary: ${escapeHtml(params.data.pickupLocation)} → ${escapeHtml(params.data.destination)} · ${escapeHtml(params.data.travelDate)}</p>
       <p>Thank you for choosing ${escapeHtml(siteConfig.businessName)}.<br/>Travel Smart. Travel Together.</p>
     </div>
@@ -101,7 +101,7 @@ export async function sendCustomerAcknowledgementEmail(params: {
   await resend.emails.send({
     from,
     to: customerEmail,
-    subject: `We received your enquiry (${params.reference}) — ${siteConfig.businessName}`,
+    subject: `We received your trip details (${params.reference}) — ${siteConfig.businessName}`,
     html,
   });
 

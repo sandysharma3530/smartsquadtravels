@@ -22,8 +22,8 @@ export function FaqSection({ className, faqs }: FaqSectionProps) {
     >
       <div className="container-site">
         <SectionHeader
-          title="Frequently Asked Questions"
-          subtitle="Clear answers about Traveller rental, custom quotes and where we operate."
+          title="Questions we hear often"
+          subtitle="Which vehicle to choose, where we pick you up, and what the price includes."
         />
 
         <div className="mx-auto max-w-3xl space-y-3">
@@ -74,7 +74,7 @@ export function FaqSection({ className, faqs }: FaqSectionProps) {
       </div>
       {/* Visually linked heading id for aria-labelledby */}
       <span id="faq-heading" className="sr-only">
-        Frequently Asked Questions
+        Before you enquire
       </span>
     </section>
   );

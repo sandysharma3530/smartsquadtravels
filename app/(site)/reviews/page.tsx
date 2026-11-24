@@ -11,9 +11,9 @@ import { createMetadata } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
 export const metadata = createMetadata({
-  title: "Customer Reviews & Feedback",
+  title: "Customer reviews",
   description:
-    "Read traveller feedback about Smart Squad Travels group transportation from Delhi NCR. Connect Google Business Profile reviews when ready for live ratings.",
+    "Sample notes about the group trips Smart Squad Travels arranges from Ghaziabad. Verified Google reviews can replace these when they are connected.",
   path: "/reviews",
 });
 
@@ -42,8 +42,8 @@ export default async function ReviewsPage() {
             Customer Reviews
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Feedback from groups who have travelled with us. We are committed to
-            transparent, comfortable group transportation.
+            Sample notes of the kind of trips we arrange. These are not
+            verified Google reviews yet.
           </p>
         </div>
       </section>
@@ -54,10 +54,8 @@ export default async function ReviewsPage() {
             className="mb-10 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900"
             role="note"
           >
-            <strong>Demo disclaimer:</strong> The reviews below are sample
-            content for website development. They are not verified Google
-            reviews. Replace with real customer feedback or connect your Google
-            Business Profile before going live.
+            These reviews are samples for the page layout. They are not real
+            Google reviews.
           </div>
 
           {googleConfigured ? (
@@ -71,8 +69,8 @@ export default async function ReviewsPage() {
 
           <SectionHeader
             as="h2"
-            title="What Travellers Say"
-            subtitle="Sample reviews illustrating the kind of group travel experiences we aim to deliver."
+            title="What travellers say"
+            subtitle="Examples of the kind of feedback we hope to earn. These notes are samples, not verified reviews."
           />
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

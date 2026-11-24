@@ -44,16 +44,16 @@ export async function generateMetadata({ params }: DestinationDetailPageProps) {
   }
 
   return createMetadata({
-    title: `${destination.name} Traveller from Delhi NCR`,
-    description: `${destination.shortDescription} Request a customized Force Traveller or Urbania quote for group travel to ${destination.name} from Noida and Delhi NCR.`,
+    title: `${destination.name} drive from Ghaziabad`,
+    description: `${destination.shortDescription} Ask Smart Squad Travels for a Force Traveller or Urbania price from Ghaziabad, Noida or Delhi.`,
     path: `/destinations/${destination.slug}`,
     image: destination.coverImage,
     keywords: [
+      `${destination.name} from Ghaziabad`,
+      `${destination.name} group drive`,
       `${destination.name} Traveller`,
-      `${destination.name} from Delhi NCR`,
-      `${destination.name} group travel`,
       destination.region,
-      "customized outstation travel",
+      "Smart Squad Travels",
     ],
   });
 }
@@ -147,14 +147,14 @@ export default async function DestinationDetailPage({
           <div className="grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
             <div className="space-y-10">
               <div>
-                <h2 className="text-2xl font-bold text-navy">Introduction</h2>
+                <h2 className="text-2xl font-bold text-navy">About this place</h2>
                 <p className="mt-4 leading-relaxed text-text-muted">
                   {destination.introduction}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Highlights</h2>
+                <h2 className="text-2xl font-bold text-navy">What to see</h2>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {destination.highlights.map((highlight) => (
                     <li
@@ -175,7 +175,7 @@ export default async function DestinationDetailPage({
                 <div className="rounded-xl border border-slate-100 bg-white p-5 shadow-soft">
                   <div className="flex items-center gap-2 text-teal">
                     <Calendar className="h-5 w-5" aria-hidden="true" />
-                    <h3 className="font-bold text-navy">Recommended Months</h3>
+                    <h3 className="font-bold text-navy">Best time to go</h3>
                   </div>
                   <p className="mt-2 text-sm text-text-muted">
                     {destination.recommendedMonths}
@@ -185,28 +185,24 @@ export default async function DestinationDetailPage({
                 <div className="rounded-xl border border-slate-100 bg-white p-5 shadow-soft">
                   <div className="flex items-center gap-2 text-teal">
                     <Clock className="h-5 w-5" aria-hidden="true" />
-                    <h3 className="font-bold text-navy">
-                      Suggested Duration
-                    </h3>
+                    <h3 className="font-bold text-navy">How long to plan</h3>
                   </div>
                   <p className="mt-2 text-sm text-text-muted">
                     {destination.suggestedDuration}
                   </p>
                   <p className="mt-1 text-xs text-teal">
-                    Fully customizable for your group
+                    You choose the nights and the stops.
                   </p>
                 </div>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Road Travel Notes</h2>
-                <p className="mt-4 leading-relaxed text-text-muted">
-                  {destination.roadTravelNotes}
-                </p>
+                <h2 className="text-2xl font-bold text-navy">The drive from Ghaziabad</h2>
+                <RoadTravelNotes notes={destination.roadTravelNotes} />
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Suitable For</h2>
+                <h2 className="text-2xl font-bold text-navy">A good fit for</h2>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {destination.suitableFor.map((item) => (
                     <li
@@ -221,9 +217,7 @@ export default async function DestinationDetailPage({
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">
-                  Recommended Vehicles
-                </h2>
+                <h2 className="text-2xl font-bold text-navy">Vehicle we usually suggest</h2>
                 <ul className="mt-4 space-y-2">
                   {recommendedVehicleNames.map((name) => (
                     <li
@@ -251,9 +245,7 @@ export default async function DestinationDetailPage({
 
               {destination.nearbyPlaces.length > 0 ? (
                 <div>
-                  <h2 className="text-2xl font-bold text-navy">
-                    Nearby Places
-                  </h2>
+                  <h2 className="text-2xl font-bold text-navy">Nearby places</h2>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {destination.nearbyPlaces.map((place) => (
                       <li
@@ -279,9 +271,34 @@ export default async function DestinationDetailPage({
       </section>
 
       <ContactCTA
-        heading={`Plan your ${destination.name} trip`}
-        text="Share your travel dates and group size for a customized Force Traveller or Urbania quotation."
+        heading={`Get a quote for ${destination.name}`}
+        text="Share the date, the pickup point, and how many people are coming. We will reply with a vehicle for this drive."
       />
     </>
+  );
+}
+
+function RoadTravelNotes({ notes }: { notes: string }) {
+  const paragraphs = notes
+    .replace(/\r\n/g, "\n")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
+  if (paragraphs.length === 0) {
+    return null;
+  }
+
+  return (
+    <div className="mt-4 space-y-4">
+      {paragraphs.map((paragraph, index) => (
+        <p
+          key={`${index}-${paragraph.slice(0, 24)}`}
+          className="whitespace-pre-line leading-relaxed text-text-muted"
+        >
+          {paragraph}
+        </p>
+      ))}
+    </div>
   );
 }

@@ -1,497 +1,517 @@
 [
   {
-    "slug": "tungnath-chopta",
     "name": "Tungnath & Chopta",
+    "slug": "tungnath-chopta",
     "region": "Uttarakhand",
-    "shortDescription": "Scenic hill destination known for Tungnath Temple and Chopta meadows.",
-    "introduction": "Chopta and Tungnath attract travellers seeking mountain views, temple visits and peaceful highland scenery. Smart Squad Travels provides comfortable group transportation from Delhi NCR for customized journeys to this region.",
-    "highlights": [
-      "Tungnath Temple trail access",
-      "Chopta meadow landscapes",
-      "Cool mountain climate",
-      "Ideal for small to mid-size groups"
+    "gallery": [
+      {
+        "alt": "Chopta hillside landscape",
+        "src": "/images/destinations/tungnath-chopta.jpg",
+        "caption": "Chopta scenery"
+      },
+      {
+        "alt": "Tungnath & Chopta",
+        "src": "https://xwvbyuenyhgrpaafcbgm.supabase.co/storage/v1/object/public/cms-uploads/destinations/gallery-image-1-tungnath-templeimage-1794662100184.webp",
+        "caption": "The historic stone temple of Tungnath with mountain peaks in the background."
+      },
+      {
+        "alt": "Tungnath & Chopta",
+        "src": "https://xwvbyuenyhgrpaafcbgm.supabase.co/storage/v1/object/public/cms-uploads/destinations/gallery-image-2-chandrashila-summit-view-1794662102017.webp",
+        "caption": "A trekker standing at Chandrashila Peak admiring the 360-degree Himalayan view."
+      },
+      {
+        "alt": "Tungnath & Chopta",
+        "src": "https://xwvbyuenyhgrpaafcbgm.supabase.co/storage/v1/object/public/cms-uploads/destinations/tungnath-chopta-meadow-gallery-1794662103125.webp",
+        "caption": "Panoramic ultra-wide shot of Chopta's green meadows looking up towards the Himalayan peaks with sunbeams."
+      },
+      {
+        "alt": "Tungnath & Chopta",
+        "src": "https://xwvbyuenyhgrpaafcbgm.supabase.co/storage/v1/object/public/cms-uploads/destinations/tungnath-chopta-sunset-gallery-1794662103896.webp",
+        "caption": "The historic stone temple of Tungnath with mountain peaks in the background."
+      }
     ],
-    "recommendedMonths": "March–June and September–November (weather dependent)",
-    "suggestedDuration": "Typically 2–4 days for a relaxed itinerary — fully customizable based on your group",
-    "roadTravelNotes": "Hill roads require careful planning around weather, daylight driving and rest stops. Share your preferred pace so we can suggest a sensible travel plan.",
+    "coverAlt": "Mountain meadows near Tungnath and Chopta in Uttarakhand",
+    "homeOrder": 1,
+    "coverImage": "https://xwvbyuenyhgrpaafcbgm.supabase.co/storage/v1/object/public/cms-uploads/destinations/tungnath-chopta-cover-1794662055241.webp",
+    "highlights": [
+      "Walk up to Tungnath Temple",
+      "Chopta meadows",
+      "Cool mountain air",
+      "Comfortable for small and mid-size groups"
+    ],
     "suitableFor": [
       "Family groups",
       "Friends",
       "Pilgrimage groups",
       "Corporate outings"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Tungnath is a Panch Kedar temple at about 3,680 metres, and Chopta is the meadow most groups use as a base for that walk. We drive you from Ghaziabad, Noida or Delhi as far as the road allows. The trek, your stay, and how long you spend outside are yours to plan.",
     "nearbyPlaces": [
       "Kedarnath",
       "Rudraprayag",
       "Ukhimath"
     ],
-    "coverImage": "/images/destinations/tungnath-chopta.jpg",
-    "coverAlt": "Mountain meadows near Tungnath and Chopta in Uttarakhand",
-    "gallery": [
-      {
-        "src": "/images/destinations/tungnath-chopta.jpg",
-        "alt": "Chopta hillside landscape",
-        "caption": "Chopta scenery"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 1
+    "roadTravelNotes": "From Ghaziabad the usual hill approach is Rishikesh or Haridwar, then Devprayag, Srinagar, Rudraprayag, Kund and Ukhimath before Chopta.\nThe last stretch is narrow, so we keep it in daylight and plan a proper halt before it.\nWeather can change quickly. We check the road report before leaving Ghaziabad.\nWinter snow can close the final climb, so a December to February date needs a local update first.\nLeave early, and keep a spare hour for hill traffic.",
+    "shortDescription": "Meadows and the walk to Tungnath, with the drive starting from Ghaziabad.",
+    "recommendedMonths": "March–June and September–November, depending on the weather",
+    "suggestedDuration": "Usually 2–4 days. Tell us if your group wants it shorter or longer.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "nainital",
     "name": "Nainital",
+    "slug": "nainital",
     "region": "Uttarakhand",
-    "shortDescription": "Popular lake town and weekend getaway from Delhi NCR.",
-    "introduction": "Nainital is a classic North India hill destination around Naini Lake, with viewpoints, markets and nearby lakes. Request a custom quote for comfortable Traveller transportation from Noida, Greater Noida or Delhi.",
+    "gallery": [
+      {
+        "alt": "Nainital lake view",
+        "src": "/images/destinations/nainital.jpg",
+        "caption": "Naini Lake area"
+      }
+    ],
+    "coverAlt": "Nainital lake surrounded by hills",
+    "homeOrder": 2,
+    "coverImage": "/images/destinations/nainital.jpg",
     "highlights": [
       "Naini Lake",
       "Mall Road",
       "Viewpoints and nearby lakes",
-      "Family-friendly getaway"
+      "Easy for families"
     ],
-    "recommendedMonths": "March–June and September–November",
-    "suggestedDuration": "Typically 2–3 days — customizable for your group",
-    "roadTravelNotes": "Expect winding hill roads. Early morning departures from Delhi NCR often work well for day-one comfort.",
     "suitableFor": [
       "Families",
       "Couples traveling in groups",
       "School trips",
       "Corporate teams"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Nainital sits around Naini Lake, with Mall Road on the slope and quieter lakes a short drive away. We pick your group up in Ghaziabad, Noida or Delhi and drop you at the hotel you have already booked. The price covers the vehicle and the driving.",
     "nearbyPlaces": [
       "Bhimtal",
       "Sattal",
       "Mukteshwar"
     ],
-    "coverImage": "/images/destinations/nainital.jpg",
-    "coverAlt": "Nainital lake surrounded by hills",
-    "gallery": [
-      {
-        "src": "/images/destinations/nainital.jpg",
-        "alt": "Nainital lake view",
-        "caption": "Naini Lake area"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 2
+    "roadTravelNotes": "The climb after Kathgodam is slow. Leaving Ghaziabad before sunrise makes the first day easier.\nWeekend traffic builds up near Mall Road, so an afternoon arrival is often calmer than noon.\nBhimtal or Sattal can be added if the group wants another lake. Say so when you ask for a quote.",
+    "shortDescription": "A relaxed weekend by Naini Lake, usually one night from Ghaziabad.",
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Usually 2–3 days. Easy to shorten or extend.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "mussoorie",
     "name": "Mussoorie",
+    "slug": "mussoorie",
     "region": "Uttarakhand",
-    "shortDescription": "Queen of the Hills — viewpoints, walks and cool weather.",
-    "introduction": "Mussoorie offers hill-station charm close to Dehradun, with promenades, viewpoints and nearby waterfalls. We arrange group vehicle travel tailored to your dates and passenger count.",
+    "gallery": [
+      {
+        "alt": "Mussoorie hills",
+        "src": "/images/destinations/mussoorie.jpg",
+        "caption": "Mussoorie hills"
+      }
+    ],
+    "coverAlt": "Mussoorie hill station panoramic view",
+    "homeOrder": 3,
+    "coverImage": "/images/destinations/mussoorie.jpg",
     "highlights": [
       "Mall Road",
-      "Gun Hill / viewpoints",
-      "Kempty Falls area",
-      "Pleasant hill climate"
+      "Gun Hill and viewpoints",
+      "Kempty Falls",
+      "Pleasant hill weather"
     ],
-    "recommendedMonths": "March–June and September–November",
-    "suggestedDuration": "Typically 2–3 days — adjust to your schedule",
-    "roadTravelNotes": "Traffic near popular spots can increase on weekends and holidays. Flexible pickup timing helps.",
     "suitableFor": [
       "Families",
       "Friends",
       "Corporate getaways"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Mussoorie is the ridge above Dehradun: a walk on the Mall, a viewpoint, and Kempty Falls if the group still has energy. We handle the drive from Ghaziabad. You choose the hotel and which stops are worth your time.",
     "nearbyPlaces": [
       "Dehradun",
       "Dhanaulti",
       "Haridwar"
     ],
-    "coverImage": "/images/destinations/mussoorie.jpg",
-    "coverAlt": "Mussoorie hill station panoramic view",
-    "gallery": [
-      {
-        "src": "/images/destinations/mussoorie.jpg",
-        "alt": "Mussoorie hills",
-        "caption": "Mussoorie hills"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 3
+    "roadTravelNotes": "Weekend traffic builds on the Dehradun–Mussoorie climb. Leaving Ghaziabad on Friday night, or before 5 am on Saturday, avoids the worst of it.\nThe Mall is tight for a large vehicle, so send the hotel lane before we leave.\nDhanaulti is a quieter add-on when Mall Road is crowded.",
+    "shortDescription": "A cool ridge above Dehradun, easy as a day trip or a weekend.",
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Usually 2–3 days. Adjust it to your schedule.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "kedarnath",
     "name": "Kedarnath",
+    "slug": "kedarnath",
     "region": "Uttarakhand",
-    "shortDescription": "Sacred Himalayan pilgrimage destination.",
-    "introduction": "Kedarnath is an important pilgrimage destination in Uttarakhand. Smart Squad Travels supports group road travel planning up to feasible roadheads based on season, regulations and passenger needs.",
-    "highlights": [
-      "Pilgrimage journey planning",
-      "Group coordination",
-      "Seasonal route awareness",
-      "Comfortable road travel"
+    "gallery": [
+      {
+        "alt": "Kedarnath landscape",
+        "src": "/images/destinations/kedarnath.jpg",
+        "caption": "Kedarnath region"
+      }
     ],
-    "recommendedMonths": "Typically May–October (official yatra season varies yearly)",
-    "suggestedDuration": "Often 3–5 days depending on route and rest needs — fully customizable",
-    "roadTravelNotes": "Access depends on open routes, weather and local guidelines. Share travel dates early so we can advise practical pickup and drop options.",
+    "coverAlt": "Kedarnath temple area in the Himalayas",
+    "homeOrder": 4,
+    "coverImage": "/images/destinations/kedarnath.jpg",
+    "highlights": [
+      "Drive planned to the road head",
+      "Dates checked against the yatra season",
+      "Room for a full pilgrimage group",
+      "Return timed for daylight on the hills"
+    ],
     "suitableFor": [
       "Pilgrimage groups",
       "Families",
       "Senior-friendly groups with planning"
     ],
-    "recommendedVehicles": [
-      "force-traveller"
-    ],
+    "introduction": "Kedarnath itself is a walk from the last point cars can reach. We plan the drive from Ghaziabad to wherever vehicles are permitted that season, then the return. The trek, a pony and the hotel night are arranged by you.",
     "nearbyPlaces": [
       "Gaurikund",
       "Sonprayag",
       "Rudraprayag"
     ],
-    "coverImage": "/images/destinations/kedarnath.jpg",
-    "coverAlt": "Kedarnath temple area in the Himalayas",
-    "gallery": [
-      {
-        "src": "/images/destinations/kedarnath.jpg",
-        "alt": "Kedarnath landscape",
-        "caption": "Kedarnath region"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 4
+    "roadTravelNotes": "The last point a vehicle can reach changes with the season and with local orders. Send your dates early so we can say where the vehicle will actually stop.\nThe opening weeks are crowded at Gaurikund and Sonprayag. We keep spare time rather than promising an exact arrival.\nIf anyone in the group cannot do the walk, tell us before we price the trip.",
+    "shortDescription": "Road travel for the yatra, as far as vehicles are allowed to go.",
+    "recommendedMonths": "Usually May–October. The official yatra dates change each year.",
+    "suggestedDuration": "Often 3–5 days, depending on the route and how much rest the group needs.",
+    "recommendedVehicles": [
+      "force-traveller"
+    ]
   },
   {
-    "slug": "haridwar-rishikesh",
     "name": "Haridwar & Rishikesh",
+    "slug": "haridwar-rishikesh",
     "region": "Uttarakhand",
-    "shortDescription": "Spiritual ghats, Ganga aarti and riverside experiences.",
-    "introduction": "Haridwar and Rishikesh are among the most requested destinations from Delhi NCR for spiritual visits, family trips and weekend getaways. Ask for a custom Traveller quote based on your group size.",
+    "gallery": [
+      {
+        "alt": "Haridwar ghat evening view",
+        "src": "/images/destinations/haridwar-rishikesh.jpg",
+        "caption": "Haridwar & Rishikesh"
+      }
+    ],
+    "coverAlt": "Ganga riverfront at Haridwar and Rishikesh",
+    "homeOrder": 5,
+    "coverImage": "/images/destinations/haridwar-rishikesh.jpg",
     "highlights": [
       "Har Ki Pauri",
       "Ganga Aarti",
-      "Rishikesh riverside areas",
-      "Easy weekend destination"
+      "The Rishikesh riverfront",
+      "Easy weekend trip"
     ],
-    "recommendedMonths": "October–March for cooler weather; year-round for pilgrimages",
-    "suggestedDuration": "Typically 1–3 days — customizable",
-    "roadTravelNotes": "Well-connected from Delhi NCR. Festival days may mean heavier traffic near ghats.",
     "suitableFor": [
       "Families",
       "Pilgrimage groups",
       "Corporate teams",
       "School groups"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Haridwar and Rishikesh are an easy spiritual trip from Ghaziabad: the ghats, Ganga Aarti if you want to stay for it, and a riverside halt. We quote the vehicle for the hours you need, including waiting while the group is at the ghat.",
     "nearbyPlaces": [
       "Dehradun",
       "Mussoorie",
       "Neelkanth"
     ],
-    "coverImage": "/images/destinations/haridwar-rishikesh.jpg",
-    "coverAlt": "Ganga riverfront at Haridwar and Rishikesh",
-    "gallery": [
-      {
-        "src": "/images/destinations/haridwar-rishikesh.jpg",
-        "alt": "Haridwar ghat evening view",
-        "caption": "Haridwar & Rishikesh"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 5
+    "roadTravelNotes": "The highway from Ghaziabad is straightforward until you reach town.\nFestival and weekend evenings crowd the lanes around the ghats, so we agree a meeting point a little away from the crowd.\nTell us which aarti you want. The vehicle waits there. We do not drop you into a moving procession.",
+    "shortDescription": "Ghats and a Ganga evening, close enough for a short trip from Ghaziabad.",
+    "recommendedMonths": "October–March for cooler weather. Pilgrimage trips run through the year.",
+    "suggestedDuration": "Usually 1–3 days. A same-day trip is possible.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "manali",
     "name": "Manali",
+    "slug": "manali",
     "region": "Himachal Pradesh",
-    "shortDescription": "Popular Himalayan destination for group holidays.",
-    "introduction": "Manali is a favourite for longer group holidays from Delhi NCR. We help plan comfortable Force Traveller or Urbania travel around your preferred dates and passenger count — without fixed package pricing.",
+    "gallery": [
+      {
+        "alt": "Manali hills",
+        "src": "/images/destinations/manali.jpg",
+        "caption": "Manali"
+      }
+    ],
+    "coverAlt": "Manali mountain valley landscape",
+    "homeOrder": 6,
+    "coverImage": "/images/destinations/manali.jpg",
     "highlights": [
       "Mountain scenery",
-      "Solang / nearby valleys",
-      "Mall Road area",
-      "Group holiday favourite"
+      "Solang and nearby valleys",
+      "Mall Road",
+      "A favourite group holiday"
     ],
-    "recommendedMonths": "March–June and October–February (season preferences vary)",
-    "suggestedDuration": "Typically 4–6 days for a relaxed trip — customizable",
-    "roadTravelNotes": "Longer highway and hill stretches. Overnight or early starts are common for comfort.",
     "suitableFor": [
       "Friends",
       "Families",
       "Corporate outings"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Manali is a multi-day drive from Ghaziabad, not a quick weekend hop. We plan the Traveller or Urbania around your dates and group size, and we break the journey when the distance needs it. You book the hotels along the way.",
     "nearbyPlaces": [
       "Kullu",
       "Solang Valley",
       "Kasol"
     ],
-    "coverImage": "/images/destinations/manali.jpg",
-    "coverAlt": "Manali mountain valley landscape",
-    "gallery": [
-      {
-        "src": "/images/destinations/manali.jpg",
-        "alt": "Manali hills",
-        "caption": "Manali"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 6
+    "roadTravelNotes": "We would rather leave Ghaziabad at dawn, or the evening before, and break the journey, than drive the hills through the night.\nThe Kullu–Manali stretch slows down in rain and on holiday weekends.\nIf you want Kasol or Solang, mention it when you enquire so those kilometres are in the price.",
+    "shortDescription": "A long Himachal drive, broken into days your group can sit through.",
+    "recommendedMonths": "March–June and October–February. The best months depend on what you want to do.",
+    "suggestedDuration": "Usually 4–6 days for a relaxed trip. Tell us if you need fewer days.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "shimla",
     "name": "Shimla",
+    "slug": "shimla",
     "region": "Himachal Pradesh",
-    "shortDescription": "Colonial hill capital with malls, viewpoints and cool air.",
-    "introduction": "Shimla remains a classic Himachal destination for families and groups. Request a tailored quotation for pickup from Noida, Greater Noida or Delhi.",
-    "highlights": [
-      "The Ridge & Mall Road",
-      "Viewpoints",
-      "Family-friendly hills",
-      "Weekend or extended stays"
+    "gallery": [
+      {
+        "alt": "Shimla hillside town",
+        "src": "/images/destinations/shimla.jpg",
+        "caption": "Shimla"
+      }
     ],
-    "recommendedMonths": "March–June and September–November",
-    "suggestedDuration": "Typically 3–5 days — adjust as needed",
-    "roadTravelNotes": "Popular weekends can be busy. Sharing flexible timings helps with smoother travel.",
+    "coverAlt": "Shimla town in the hills",
+    "homeOrder": 7,
+    "coverImage": "/images/destinations/shimla.jpg",
+    "highlights": [
+      "The Ridge and Mall Road",
+      "Viewpoints",
+      "Easy for families",
+      "A weekend or a longer stay"
+    ],
     "suitableFor": [
       "Families",
       "School trips",
       "Corporate groups"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Shimla is the old Himachal capital on the ridge: the Mall, a viewpoint, and Kufri if you want the extra climb. We pick the group up in Ghaziabad, Noida or Delhi and price the days on the road. The hotel and the walk on the Mall are yours to arrange.",
     "nearbyPlaces": [
       "Kufri",
       "Chail",
       "Kasauli"
     ],
-    "coverImage": "/images/destinations/shimla.jpg",
-    "coverAlt": "Shimla town in the hills",
-    "gallery": [
-      {
-        "src": "/images/destinations/shimla.jpg",
-        "alt": "Shimla hillside town",
-        "caption": "Shimla"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 7
+    "roadTravelNotes": "Holiday weekends fill the road up from the plains. Leaving Ghaziabad on Thursday is calmer than Saturday morning.\nWe do not drive a 21-seater along the Mall. Share the hotel, or a nearby stand, so the walk is short.\nKufri adds time. Tell us if you want it before we close the price.",
+    "shortDescription": "The Shimla ridge, with pickup from Ghaziabad, Noida or Delhi.",
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Usually 3–5 days. Adjust it to your dates.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "jaipur",
     "name": "Jaipur",
+    "slug": "jaipur",
     "region": "Rajasthan",
-    "shortDescription": "Pink City forts, bazaars and heritage sightseeing.",
-    "introduction": "Jaipur is ideal for heritage-focused group travel from Delhi NCR. We provide Traveller transportation so your group can explore at a comfortable pace with a custom travel plan.",
-    "highlights": [
-      "Amer Fort area",
-      "City Palace vicinity",
-      "Bazaars and heritage sites",
-      "Day or multi-day options"
+    "gallery": [
+      {
+        "alt": "Jaipur heritage architecture",
+        "src": "/images/destinations/jaipur.jpg",
+        "caption": "Jaipur"
+      }
     ],
-    "recommendedMonths": "October–March for pleasant weather",
-    "suggestedDuration": "Typically 1–3 days — fully customizable",
-    "roadTravelNotes": "Mostly highway travel from Delhi NCR. Early starts help maximize sightseeing time.",
+    "coverAlt": "Jaipur fort and pink city architecture",
+    "homeOrder": 8,
+    "coverImage": "/images/destinations/jaipur.jpg",
+    "highlights": [
+      "Amer Fort",
+      "City Palace area",
+      "Bazaars and heritage sites",
+      "A day trip or a longer stay"
+    ],
     "suitableFor": [
       "Families",
       "Corporate teams",
       "Wedding guest transfers",
       "School groups"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Jaipur is a straightforward highway run from Ghaziabad, useful for a fort day or a couple of nights with the family. We provide the vehicle and the driver. Tickets, guides and your stay are not part of the price.",
     "nearbyPlaces": [
       "Pushkar",
       "Ajmer",
       "Agra"
     ],
-    "coverImage": "/images/destinations/jaipur.jpg",
-    "coverAlt": "Jaipur fort and pink city architecture",
-    "gallery": [
-      {
-        "src": "/images/destinations/jaipur.jpg",
-        "alt": "Jaipur heritage architecture",
-        "caption": "Jaipur"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 8
+    "roadTravelNotes": "Most of this trip is highway. Leaving Ghaziabad by 6 am puts the group in the city before the forts heat up.\nTell us the first stop. Amer and the walled city are not a five-minute hop in city traffic.\nPushkar or Ajmer can be a separate day. Mention them if you want them in the quote.",
+    "shortDescription": "A highway day to the Pink City, with the forts on your own schedule.",
+    "recommendedMonths": "October–March, when the weather is pleasant",
+    "suggestedDuration": "Usually 1–3 days. A same-day return is possible.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "jammu-kashmir",
     "name": "Jammu & Kashmir",
+    "slug": "jammu-kashmir",
     "region": "Jammu & Kashmir",
-    "shortDescription": "Scenic valleys and memorable group journeys.",
-    "introduction": "Jammu & Kashmir offers dramatic landscapes for carefully planned group travel. Share your preferred cities, dates and passenger count for a customized transportation quotation.",
-    "highlights": [
-      "Scenic valleys",
-      "Custom multi-city planning",
-      "Group travel coordination",
-      "Seasonal route guidance"
+    "gallery": [
+      {
+        "alt": "Kashmir valley scenery",
+        "src": "/images/destinations/jammu-kashmir.jpg",
+        "caption": "Jammu & Kashmir"
+      }
     ],
-    "recommendedMonths": "April–October for many valley routes (confirm seasonally)",
-    "suggestedDuration": "Often 5–8 days depending on cities covered — customizable",
-    "roadTravelNotes": "Longer journeys may need staged travel and weather awareness. We plan around practical driving days.",
+    "coverAlt": "Scenic valley landscape in Jammu and Kashmir",
+    "homeOrder": 9,
+    "coverImage": "/images/destinations/jammu-kashmir.jpg",
+    "highlights": [
+      "Valleys and mountain roads",
+      "More than one town on the same trip",
+      "Pickup for the whole group",
+      "The season checked before you leave"
+    ],
     "suitableFor": [
       "Families",
       "Friends",
       "Corporate incentive groups"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "A Jammu & Kashmir trip needs a list of towns, not a one-line plan. Tell us whether you want Jammu, Srinagar, Gulmarg, Pahalgam or somewhere else, and we will price the vehicle days from Ghaziabad. Permits, hotels and houseboats are arranged by you.",
     "nearbyPlaces": [
       "Srinagar",
       "Gulmarg",
       "Pahalgam",
       "Jammu"
     ],
-    "coverImage": "/images/destinations/jammu-kashmir.jpg",
-    "coverAlt": "Scenic valley landscape in Jammu and Kashmir",
-    "gallery": [
-      {
-        "src": "/images/destinations/jammu-kashmir.jpg",
-        "alt": "Kashmir valley scenery",
-        "caption": "Jammu & Kashmir"
-      }
-    ],
     "featuredOnHome": true,
-    "homeOrder": 9
+    "roadTravelNotes": "This is not a straight overnight drive from Ghaziabad. We break it into manageable days.\nWeather and local advisories can close a valley road. We will say so before you leave, rather than finding out at a checkpoint.\nName every overnight town when you enquire. A town that is missing from the list is a day that is missing from the price.",
+    "shortDescription": "A long valley trip, planned in driving days the group can manage.",
+    "recommendedMonths": "April–October for many valley routes. Confirm the season for your dates.",
+    "suggestedDuration": "Often 5–8 days, depending on how many towns you want to cover.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "ayodhya",
     "name": "Ayodhya",
+    "slug": "ayodhya",
     "region": "Uttar Pradesh",
-    "shortDescription": "Important spiritual destination for group pilgrimages.",
-    "introduction": "Ayodhya is a key spiritual destination in Uttar Pradesh. Smart Squad Travels arranges comfortable group transportation from Delhi NCR based on your travel date and group size.",
-    "highlights": [
-      "Pilgrimage travel",
-      "Group-friendly planning",
-      "Door-to-door options",
-      "Flexible timing"
+    "gallery": [
+      {
+        "alt": "Ayodhya spiritual destination",
+        "src": "/images/destinations/ayodhya.jpg",
+        "caption": "Ayodhya"
+      }
     ],
-    "recommendedMonths": "October–March preferred; year-round for pilgrimages",
-    "suggestedDuration": "Typically 1–3 days — customizable",
-    "roadTravelNotes": "Festival periods can be crowded. Booking travel windows early is recommended.",
+    "coverAlt": "Ayodhya temple and city skyline",
+    "homeOrder": 10,
+    "coverImage": "/images/destinations/ayodhya.jpg",
+    "highlights": [
+      "Timed around your darshan",
+      "Comfortable for a full group",
+      "Pickup from your address",
+      "A start time you choose"
+    ],
     "suitableFor": [
       "Pilgrimage groups",
       "Families",
       "Senior groups with planning"
     ],
-    "recommendedVehicles": [
-      "force-traveller"
-    ],
+    "introduction": "Ayodhya is a pilgrimage drive from Ghaziabad. We set the pickup, the waiting time while the group is inside, and the return. Darshan slots, hotels and priests are not part of our service.",
     "nearbyPlaces": [
       "Lucknow",
       "Prayagraj",
       "Varanasi"
     ],
-    "coverImage": "/images/destinations/ayodhya.jpg",
-    "coverAlt": "Ayodhya temple and city skyline",
-    "gallery": [
-      {
-        "src": "/images/destinations/ayodhya.jpg",
-        "alt": "Ayodhya spiritual destination",
-        "caption": "Ayodhya"
-      }
-    ],
     "featuredOnHome": false,
-    "homeOrder": 10
+    "roadTravelNotes": "Festival dates fill the approach roads. Send the travel date before you promise the group a morning slot.\nWe agree a meeting point that a large vehicle can actually use.\nIf darshan runs long, the vehicle waits. That waiting time is in the quote, not added later.",
+    "shortDescription": "A temple trip into Uttar Pradesh, timed around your darshan.",
+    "recommendedMonths": "October–March is more comfortable. Pilgrimage trips run through the year.",
+    "suggestedDuration": "Usually 1–3 days. A same-day return is possible on quieter dates.",
+    "recommendedVehicles": [
+      "force-traveller"
+    ]
   },
   {
-    "slug": "mathura-vrindavan",
     "name": "Mathura & Vrindavan",
+    "slug": "mathura-vrindavan",
     "region": "Uttar Pradesh",
-    "shortDescription": "Krishna bhakti destinations close to Delhi NCR.",
-    "introduction": "Mathura and Vrindavan are popular for day trips and short pilgrimages from Delhi NCR. Request a quote for Force Traveller group travel tailored to your schedule.",
-    "highlights": [
-      "Temple visits",
-      "Day-trip friendly distance",
-      "Family pilgrimage option",
-      "Flexible same-day or overnight plans"
+    "gallery": [
+      {
+        "alt": "Mathura Vrindavan temples",
+        "src": "/images/destinations/mathura-vrindavan.jpg",
+        "caption": "Mathura & Vrindavan"
+      }
     ],
-    "recommendedMonths": "October–March; festivals have special crowds",
-    "suggestedDuration": "Often 1–2 days — customizable",
-    "roadTravelNotes": "Relatively accessible from Delhi NCR. Festival days may need extra buffer time.",
+    "coverAlt": "Temples in Mathura and Vrindavan",
+    "homeOrder": 11,
+    "coverImage": "/images/destinations/mathura-vrindavan.jpg",
+    "highlights": [
+      "Temple visits in a day or overnight",
+      "Close to Ghaziabad",
+      "Easy for families",
+      "You choose the temple order"
+    ],
     "suitableFor": [
       "Families",
       "Pilgrimage groups",
       "School groups"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "Mathura and Vrindavan are a short pilgrimage from Ghaziabad, and many groups finish them in a day. We price the vehicle for the temples you list. A parikrama package or a meal stop is not included unless you ask for it.",
     "nearbyPlaces": [
       "Agra",
       "Govardhan",
       "Barsana"
     ],
-    "coverImage": "/images/destinations/mathura-vrindavan.jpg",
-    "coverAlt": "Temples in Mathura and Vrindavan",
-    "gallery": [
-      {
-        "src": "/images/destinations/mathura-vrindavan.jpg",
-        "alt": "Mathura Vrindavan temples",
-        "caption": "Mathura & Vrindavan"
-      }
-    ],
     "featuredOnHome": false,
-    "homeOrder": 11
+    "roadTravelNotes": "The drive from Ghaziabad is short compared with the hills, but the lanes inside town are slow.\nFestival mornings need spare time. Tell us which temple is first so we are not waiting in the wrong lane.\nGovardhan or Barsana is a separate request. Nearby does not mean it is already in the price.",
+    "shortDescription": "Temple towns close enough for a day trip from Ghaziabad.",
+    "recommendedMonths": "October–March is more comfortable. Festival days are much busier.",
+    "suggestedDuration": "Often 1–2 days. Many groups do it as a day trip.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   },
   {
-    "slug": "jim-corbett",
     "name": "Jim Corbett",
+    "slug": "jim-corbett",
     "region": "Uttarakhand",
-    "shortDescription": "Wildlife reserve getaways for nature-focused groups.",
-    "introduction": "Jim Corbett is popular for nature escapes and weekend group travel from Delhi NCR. We provide Traveller transportation to your preferred gate or stay area based on availability and plans.",
-    "highlights": [
-      "Nature getaway",
-      "Weekend-friendly distance",
-      "Group coordination",
-      "Custom pickup points"
+    "gallery": [
+      {
+        "alt": "Jim Corbett forest scenery",
+        "src": "/images/destinations/jim-corbett.jpg",
+        "caption": "Jim Corbett"
+      }
     ],
-    "recommendedMonths": "November–June (park zones and activities vary by season)",
-    "suggestedDuration": "Typically 2–3 days — customizable",
-    "roadTravelNotes": "Confirm stay location and gate access. Early departures help maximize daylight on arrival day.",
+    "coverAlt": "Forest landscape near Jim Corbett National Park",
+    "homeOrder": 12,
+    "coverImage": "/images/destinations/jim-corbett.jpg",
+    "highlights": [
+      "A forest stay near Ramnagar",
+      "An easy weekend distance",
+      "One vehicle for the whole group",
+      "Drop at your resort or gate"
+    ],
     "suitableFor": [
       "Families",
       "Friends",
       "Corporate offsites"
     ],
-    "recommendedVehicles": [
-      "force-traveller",
-      "force-urbania"
-    ],
+    "introduction": "A Jim Corbett trip is usually a resort and a safari you book yourself. We drive the group from Ghaziabad to the gate or the stay you name, then bring you back. Safari permits are not part of our price.",
     "nearbyPlaces": [
       "Ramnagar",
       "Nainital",
       "Ranikhet"
     ],
-    "coverImage": "/images/destinations/jim-corbett.jpg",
-    "coverAlt": "Forest landscape near Jim Corbett National Park",
-    "gallery": [
-      {
-        "src": "/images/destinations/jim-corbett.jpg",
-        "alt": "Jim Corbett forest scenery",
-        "caption": "Jim Corbett"
-      }
-    ],
     "featuredOnHome": false,
-    "homeOrder": 12
+    "roadTravelNotes": "Send the resort name and which gate you are using. The approaches around Ramnagar are not all the same.\nLeaving Ghaziabad at dawn gets you there with daylight to spare.\nIf the safari is at dawn, we can arrive the evening before. That extra day is priced only if you ask for it.",
+    "shortDescription": "A drop at the resort or park gate you have already booked near Ramnagar.",
+    "recommendedMonths": "November–June. Park zones and activities change with the season.",
+    "suggestedDuration": "Usually 2–3 days. Tell us if you want an extra night.",
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ]
   }
 ]

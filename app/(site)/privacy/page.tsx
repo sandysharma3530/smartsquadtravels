@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Privacy Policy",
   description:
-    "Privacy policy for Smart Squad Travels — how we collect, use and protect your personal information when you submit travel enquiries.",
+    "How Smart Squad Travels in Ghaziabad handles names, phone numbers and trip details sent through this website.",
   path: "/privacy",
 });
 
@@ -41,69 +41,65 @@ export default async function PrivacyPage() {
         <div className="container-site">
           <div className="prose-narrow mx-auto max-w-3xl space-y-6 text-text-main">
             <p className="leading-relaxed text-text-muted">
-              This Privacy Policy describes how {siteConfig.businessName} (
-              &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects,
-              uses and protects personal information when you visit our website
-              or submit a travel enquiry.
+              This note explains what {siteConfig.businessName} collects when
+              you use this website or send a trip request, and how that
+              information is handled.
             </p>
 
             <div>
               <h2 className="text-xl font-bold text-navy">
-                Information We Collect
+                What you send us
               </h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                When you submit an enquiry form, we may collect your name,
-                phone number, email address (if provided), travel dates, pickup
-                location, destination, passenger count, vehicle preference,
-                trip type and any message you share. We may also collect
-                technical information such as browser type and pages visited
-                through standard website analytics.
+                A trip form can include your name, phone number, email if you
+                add one, travel dates, pickup point, destination, how many
+                people are coming, vehicle choice, trip type and a short
+                message. The site may also record ordinary technical details,
+                such as the browser and the pages opened, through analytics.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">
-                How We Use Your Information
+                Why we keep it
               </h2>
               <ul className="mt-3 list-disc space-y-2 pl-5 text-text-muted">
-                <li>To respond to your travel enquiry and provide quotations</li>
-                <li>To coordinate transportation services you request</li>
-                <li>To communicate about your booking or travel plans</li>
-                <li>To improve our website and customer support</li>
-                <li>To comply with applicable legal obligations</li>
+                <li>To reply to your trip request and send a price</li>
+                <li>To arrange the vehicle you ask for</li>
+                <li>To talk to you about that booking</li>
+                <li>To improve the website</li>
+                <li>To meet a legal requirement, if one applies</li>
               </ul>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">
-                Information Sharing
+                Who else sees it
               </h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                We do not sell your personal information. We may share details
-                with service providers who help us operate the website, send
-                emails or deliver transportation services — only as needed to
-                fulfil your enquiry. We may disclose information if required by
-                law or to protect our rights and safety.
+                We do not sell personal information. A hosting, email or
+                vehicle partner may receive what they need to run the site or
+                to carry out the trip you asked for. We may also disclose
+                information if the law requires it, or to protect people&apos;s
+                safety.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-navy">Data Retention</h2>
+              <h2 className="text-xl font-bold text-navy">How long it stays</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                We retain enquiry information for as long as needed to respond
-                to your request, maintain business records and comply with legal
-                requirements. You may request deletion of your data where
-                applicable law permits.
+                Trip requests are kept long enough to answer you, keep business
+                records and meet any legal holding period. You can ask us to
+                delete your details where the law allows that.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-navy">Your Choices</h2>
+              <h2 className="text-xl font-bold text-navy">Your choices</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                By submitting an enquiry, you consent to being contacted about
-                your travel request. You may opt out of marketing communications
-                at any time. To access, correct or delete your information,
-                contact us through the details on our{" "}
+                Sending a form means we may phone or WhatsApp you about that
+                trip. You can refuse later marketing messages. To see, correct
+                or delete what we hold, use the details on our{" "}
                 <Link href="/contact" className="text-teal hover:underline">
                   Contact page
                 </Link>
@@ -114,27 +110,26 @@ export default async function PrivacyPage() {
             <div>
               <h2 className="text-xl font-bold text-navy">Security</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                We take reasonable measures to protect your information.
-                However, no method of transmission over the internet is
-                completely secure. Please share only information necessary for
-                your travel enquiry.
+                We use reasonable care with the details you send. No internet
+                transmission is fully secure, so include only what we need to
+                price the trip.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">
-                Changes to This Policy
+                Updates
               </h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                We may update this Privacy Policy from time to time. Changes
-                will be posted on this page with an updated date.
+                If this note changes, the new wording is posted on this page
+                with a new date.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy">Contact</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                For privacy-related questions, please visit our{" "}
+                Questions about this note can be sent through our{" "}
                 <Link href="/contact" className="text-teal hover:underline">
                   Contact page
                 </Link>

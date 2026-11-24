@@ -6,16 +6,16 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Destinations Across North India",
+  title: "Places we drive to",
   description:
-    "Popular destinations we serve from Delhi NCR — Tungnath, Nainital, Manali, Jaipur, Kedarnath, Haridwar and more. Request a customized Traveller quote for your group.",
+    "Hill stations, temple towns and city breaks Smart Squad Travels drives to from Ghaziabad, Noida and Delhi. Open a place to see how the drive works, then ask for a quote.",
   path: "/destinations",
   keywords: [
-    "Traveller to Manali from Delhi",
-    "Nainital Traveller rental",
-    "Jaipur group travel from Noida",
-    "Kedarnath Traveller hire",
-    "North India outstation Traveller",
+    "Manali drive from Ghaziabad",
+    "Nainital group vehicle Noida",
+    "Jaipur trip from Ghaziabad",
+    "Kedarnath road travel",
+    "North India group drive",
   ],
 });
 
@@ -38,12 +38,12 @@ export default async function DestinationsPage() {
             </ol>
           </nav>
           <h1 className="text-3xl font-bold text-white md:text-4xl">
-            Popular Destinations
+            Places we drive to
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Explore North India destinations served from Noida, Greater Noida
-            and Delhi NCR. Every journey is planned around your dates and group
-            size — not fixed tour packages.
+            Hill stations, temple towns and city breaks from Ghaziabad, Noida
+            and Delhi. Open a place to see how the drive usually works, then
+            ask for a quote. You arrange your own hotel.
           </p>
         </div>
       </section>
@@ -52,8 +52,8 @@ export default async function DestinationsPage() {
         <div className="container-site">
           <SectionHeader
             as="h2"
-            title="Where Would You Like to Go?"
-            subtitle="Select a destination to see highlights, travel notes and request a customized group travel quote."
+            title="Choose a destination"
+            subtitle="Each page explains the drive, the better months to go, and what to tell us when you ask for a quote."
           />
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

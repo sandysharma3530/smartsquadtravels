@@ -37,16 +37,16 @@ export async function generateMetadata({ params }: FleetDetailPageProps) {
   }
 
   return createMetadata({
-    title: `${vehicle.name} Rental in Delhi NCR`,
-    description: `${vehicle.description} Request a customized quotation for group travel from Noida, Greater Noida and Delhi NCR.`,
+    title: `${vehicle.name} from Ghaziabad`,
+    description: `${vehicle.description} Ask Smart Squad Travels for a price from Ghaziabad, Noida or Delhi.`,
     path: `/fleet/${vehicle.slug}`,
     image: vehicle.coverImage,
     keywords: [
-      `${vehicle.name} rental`,
-      `${vehicle.name} Delhi NCR`,
+      `${vehicle.name} Ghaziabad`,
       `${vehicle.name} Noida`,
-      "group transportation",
-      "Traveller hire",
+      `${vehicle.name} Delhi`,
+      "group vehicle",
+      "Smart Squad Travels",
     ],
   });
 }
@@ -124,8 +124,7 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
 
           {!vehicle.owned ? (
             <p className="mt-2 max-w-2xl text-sm text-white/70">
-              Available through our travel network — customized quotes based on
-              your route and dates.
+              Arranged for your dates. The quote names the exact vehicle.
             </p>
           ) : null}
 
@@ -134,7 +133,7 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
               href={`/contact?vehicle=${encodeURIComponent(vehicle.slug)}`}
               className={cn(buttonVariants({ variant: "teal", size: "lg" }))}
             >
-              Request Quote
+              Get a quote
             </Link>
             <Link
               href="/fleet"
@@ -173,8 +172,7 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
             <div>
               <h2 className="text-2xl font-bold text-navy">Photo Gallery</h2>
               <p className="mt-2 text-sm text-text-muted">
-                Tap any photo to open the full gallery with keyboard and swipe
-                navigation.
+                Tap a photo to open the full gallery. You can swipe or use the arrow keys.
               </p>
               <div className="mt-6">
                 <FleetDetailGallery vehicle={vehicle} />
@@ -185,8 +183,8 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
       </section>
 
       <ContactCTA
-        heading={`Book the ${vehicle.shortName} for your trip`}
-        text="Share your travel dates, pickup location and destination for a customized quotation."
+        heading={`Get a quote for the ${vehicle.shortName}`}
+        text="Share the date, the pickup address and how many people are coming. We will tell you if this vehicle is free and what the drive costs."
       />
     </>
   );

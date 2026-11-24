@@ -113,12 +113,12 @@ export function QuickEnquiryForm({
           Enquiry received
         </p>
         <h3 className="mt-2 text-xl font-bold text-navy">
-          Thank you for your enquiry
+          Thank you. We have your trip details.
         </h3>
         <p className="mt-2 text-sm text-text-muted">
           Your reference number is{" "}
-          <span className="font-semibold text-navy">{reference}</span>. Our team
-          will contact you shortly with a customized quote.
+          <span className="font-semibold text-navy">{reference}</span>. We will
+          reply with a vehicle and a price for this trip.
         </p>
       </div>
     );
@@ -133,9 +133,9 @@ export function QuickEnquiryForm({
     >
       <div className="mb-4 border-b border-slate-100 pb-3">
         <p className="text-xs font-semibold uppercase tracking-widest text-teal">
-          Quick Enquiry
+          Plan your trip
         </p>
-        <h3 className="text-lg font-bold text-navy">Get Instant Quote</h3>
+        <h3 className="text-lg font-bold text-navy">Get a quote</h3>
       </div>
 
       <form
@@ -238,7 +238,7 @@ export function QuickEnquiryForm({
           <Input
             id="pickupLocation"
             className="h-9"
-            placeholder="e.g. Noida, Greater Noida, Delhi"
+            placeholder="e.g. Ghaziabad, Noida Sector 18, Delhi"
             aria-invalid={!!errors.pickupLocation}
             {...register("pickupLocation")}
           />
@@ -332,7 +332,7 @@ export function QuickEnquiryForm({
           <Textarea
             id="message"
             className="min-h-[72px]"
-            placeholder="Share route preferences, stops or special requirements"
+            placeholder="Pickup points, stops, or anything the driver should know"
             aria-invalid={!!errors.message}
             {...register("message")}
           />
@@ -347,7 +347,7 @@ export function QuickEnquiryForm({
             {...register("consent")}
           />
           <label htmlFor="consent" className="text-xs leading-relaxed text-text-muted">
-            I agree to be contacted about this travel enquiry. *
+            I agree that Smart Squad Travels may call or WhatsApp me about this trip. *
           </label>
         </div>
         {errors.consent ? (
@@ -380,13 +380,13 @@ export function QuickEnquiryForm({
               Submitting…
             </>
           ) : (
-            "Get Instant Quote"
+            "Send my trip details"
           )}
         </Button>
 
         <p className="flex items-center justify-center gap-1.5 text-xs text-text-muted">
           <Lock className="h-3.5 w-3.5" aria-hidden="true" />
-          Your details are secure. We will contact you shortly.
+          These details are used only to reply about this vehicle request.
         </p>
       </form>
     </div>

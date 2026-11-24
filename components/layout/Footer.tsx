@@ -150,7 +150,7 @@ export async function Footer() {
           />
 
           <FooterLinkGroup
-            title="Our Fleet"
+            title="Vehicles"
             links={[
               { label: "Force Traveller", href: "/fleet#force-traveller" },
               { label: "Force Urbania", href: "/fleet#force-urbania" },

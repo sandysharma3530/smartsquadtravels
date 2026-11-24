@@ -10,7 +10,7 @@ export const siteConfig = {
   tagline: "Travel Smart. Travel Together.",
   legalName: "Smart Squad Travels",
   shortDescription:
-    "Comfortable group transportation and Traveller rental services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys across Delhi NCR and North India.",
+    "Smart Squad Travels is based at Panchsheel Greens, Ghaziabad. We arrange a Force Traveller or Force Urbania when your group wants one vehicle from Ghaziabad, Noida or Delhi, with a clear price for the days on the road.",
 
   // REPLACE these placeholders with your real contact details
   phoneDisplay:
@@ -46,7 +46,7 @@ export const siteConfig = {
   ],
 
   businessHours: {
-    display: "Open 24x7 for enquiry and travel support",
+    display: "You can call or WhatsApp us any day",
     weekdays: "24 hours",
     weekends: "24 hours",
   },

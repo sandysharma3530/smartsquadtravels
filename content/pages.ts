@@ -1,13 +1,13 @@
 export const defaultPages = {
   aboutParagraphs: [
-    "Smart Squad Travels helps families, corporates, wedding organisers and pilgrimage groups travel together with comfortable Force Traveller and Force Urbania options. We focus on clear communication, customized quotations and dependable coordination — not fixed tour packages with hidden add-ons.",
-    "Whether you need airport transfers, wedding guest transportation, a corporate outing or a multi-day outstation journey, we work with your dates, passenger count and route preferences to suggest a practical travel plan.",
-    "Enquiries are handled with transparent pricing conversations so you know what to expect before you confirm.",
+    "Smart Squad Travels is based at Panchsheel Greens in Ghaziabad. When a family, an office, a wedding party or a temple group wants to travel together, we arrange a Force Traveller or a Force Urbania for those dates.",
+    "Send the pickup address, the travel date and how many people are coming. We reply with a driving plan and a price. Hotels, meals and entry tickets stay with you — the quote is for the vehicle and the driver.",
+    "If people are joining from more than one home in Noida or Delhi, we agree the pickup order before the vehicle leaves. The same WhatsApp chat stays open on the day you travel.",
   ],
   contactIntro:
-    "Share your travel dates, pickup point, destination and group size. We will review your request and send a customized quotation.",
-  privacyLastUpdated: "15 August 2026",
+    "Share your travel date, pickup point, destination and how many people are coming. We will reply with a vehicle that fits and a price for the trip.",
+  privacyLastUpdated: "24 November 2026",
   privacyBody: "",
-  termsLastUpdated: "15 August 2026",
+  termsLastUpdated: "24 November 2026",
   termsBody: "",
 };

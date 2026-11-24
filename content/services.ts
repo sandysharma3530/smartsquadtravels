@@ -10,105 +10,114 @@ export const services: Service[] = [
   {
     id: "family",
     slug: "family-group-trips",
-    title: "Family and Group Trips",
+    title: "Family weekends",
     description:
-      "Comfortable Traveller travel for family vacations and friend groups with door-to-door pickup planning.",
+      "Parents, children and elders travel together, with pickup from the Ghaziabad, Noida or Delhi address you choose.",
     icon: "users",
   },
   {
     id: "corporate",
     slug: "corporate-travel",
-    title: "Corporate Travel",
+    title: "Office days out",
     description:
-      "Reliable group transportation for offsites, conferences, team outings and staff transfers.",
+      "One vehicle for the whole team, timed to your meeting or event rather than a sightseeing timetable.",
     icon: "briefcase",
   },
   {
     id: "wedding",
     slug: "wedding-transportation",
-    title: "Wedding Transportation",
+    title: "Wedding-day shuttles",
     description:
-      "Coordinated guest transfers and wedding-day travel support with spacious, presentable vehicles.",
+      "Morning pickup, the venue, and the drop home. Waiting between functions is included in the quote we send first.",
     icon: "heart",
   },
   {
     id: "airport",
     slug: "airport-transfers",
-    title: "Airport Transfers",
+    title: "Delhi airport groups",
     description:
-      "Group airport pickup and drop for families, teams and wedding guests across Delhi NCR airports.",
+      "One vehicle for the whole party when flights land early or late, instead of a separate cab for every family.",
     icon: "plane",
   },
   {
     id: "religious",
     slug: "religious-journeys",
-    title: "Religious Journeys",
+    title: "Temple trips",
     description:
-      "Thoughtful planning for pilgrimages and temple visits with attention to comfort and timing.",
+      "You choose the darshan time. We plan the road, how far the vehicle can go, and where it will wait.",
     icon: "temple",
   },
   {
     id: "school",
     slug: "school-college-trips",
-    title: "School and College Trips",
+    title: "School and college days",
     description:
-      "Organised group travel for educational and recreational trips with clear coordination.",
+      "A picnic or visit day for a class. The school's return time stays fixed, and a teacher is the contact on the day.",
     icon: "graduation",
   },
   {
     id: "outstation",
     slug: "customized-outstation-travel",
-    title: "Customized Outstation Travel",
+    title: "Multi-stop trips",
     description:
-      "Flexible outstation journeys across North India planned around your dates, route and group size.",
+      "Several towns on the dates you choose. The quote follows that list. Your stay and meals stay with you.",
     icon: "map",
   },
 ];
 
 export const whyChooseUs = [
   {
+    id: "pricing",
+    title: "A price before you travel",
+    description:
+      "The quote follows the route, the dates, the vehicle and any waiting time. We do not list fixed package rates on this site.",
+  },
+  {
     id: "vehicles",
-    title: "Well-Maintained Vehicles",
-    description: "Clean, spacious Traveller options prepared for comfortable group journeys.",
+    title: "A vehicle that fits the group",
+    description:
+      "The 21-seat Traveller when the list is long. The Urbania when fewer people are travelling and the day is long.",
   },
   {
     id: "drivers",
-    title: "Experienced and Verified Drivers",
-    description: "Professional drivers focused on safe, courteous and dependable travel.",
-  },
-  {
-    id: "gps",
-    title: "GPS Tracking",
-    description: "Journey visibility that supports peace of mind for families and organisers.",
-  },
-  {
-    id: "cctv",
-    title: "CCTV-Enabled Vehicle",
-    description: "Added monitoring support on equipped vehicles for safer group travel.",
-  },
-  {
-    id: "pricing",
-    title: "Transparent Pricing",
-    description: "Clear custom quotations based on route, dates, vehicle and passenger needs.",
+    title: "Your stops, written down",
+    description:
+      "The driver leaves with your pickup points and planned halts, so the day is not decided at the first toll.",
   },
   {
     id: "ontime",
-    title: "On-Time Pickup",
-    description: "Punctual coordination so your group can travel with less waiting and stress.",
-  },
-  {
-    id: "clean",
-    title: "Clean Interiors",
-    description: "Sanitized, presentable cabins suited for families, guests and corporate teams.",
-  },
-  {
-    id: "support",
-    title: "Customer Support",
-    description: "Helpful enquiry support before and during your travel planning.",
+    title: "More than one pickup",
+    description:
+      "If people are spread across Ghaziabad, Noida and Delhi, we set the pickup order and include that time in the quote.",
   },
   {
     id: "flexible",
-    title: "Flexible Destination Planning",
-    description: "Routes shaped around your preferred destinations — not fixed tour packages.",
+    title: "Hill roads in daylight",
+    description:
+      "On mountain stretches we would rather start earlier than drive the narrow road after dark.",
+  },
+  {
+    id: "support",
+    title: "One WhatsApp chat",
+    description:
+      "The person who sent your quote stays on the same chat on the day you travel.",
+  },
+  {
+    id: "clean",
+    title: "Cabin checked for your group",
+    description:
+      "Seats, cooling and bag space are checked against your passenger count before anyone boards.",
+  },
+  {
+    id: "gps",
+    title: "Live location when the vehicle has it",
+    description:
+      "If the vehicle assigned to you can share its location, we will tell you. It is not fitted on every booking.",
+  },
+  {
+    id: "cctv",
+    title: "A cabin camera only when one is fitted",
+    description:
+      "Ask us to confirm a cabin camera for your date. We only offer it on vehicles that actually have one.",
   },
 ] as const;

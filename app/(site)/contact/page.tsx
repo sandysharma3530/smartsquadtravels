@@ -27,15 +27,15 @@ import { cn } from "@/lib/utils";
 import type { vehicleOptions } from "@/lib/validation";
 
 export const metadata = createMetadata({
-  title: "Contact Us for a Custom Traveller Quote",
+  title: "Contact us",
   description:
-    "Contact Smart Squad Travels for customized Force Traveller and Urbania quotations. Call, WhatsApp or submit an enquiry for group travel from Noida, Greater Noida and Delhi NCR.",
+    "Call, WhatsApp or send a form to Smart Squad Travels in Ghaziabad. Share your date, pickup point and group size for a Traveller or Urbania quote.",
   path: "/contact",
   keywords: [
-    "Traveller rental contact Noida",
-    "Force Traveller quote Delhi NCR",
-    "group travel enquiry",
-    "WhatsApp Traveller booking",
+    "Smart Squad Travels Ghaziabad",
+    "Force Traveller price Noida",
+    "group vehicle enquiry",
+    "WhatsApp Traveller Ghaziabad",
   ],
 });
 
@@ -166,7 +166,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                       <h2 className="font-bold text-navy">WhatsApp</h2>
                     </div>
                     <p className="mt-2 text-sm text-text-muted">
-                      Quick responses for travel enquiries and quotes.
+                      Message us for a quote. We reply on the same chat.
                     </p>
                     <a
                       href={getWhatsAppLink(

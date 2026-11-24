@@ -144,7 +144,7 @@ export function Header() {
                 "whitespace-nowrap",
               )}
             >
-              Get a Quote
+              Get a quote
             </Link>
           </div>
 
@@ -167,7 +167,7 @@ export function Header() {
                 "whitespace-nowrap",
               )}
             >
-              Get a Quote
+              Get a quote
             </Link>
           </div>
 

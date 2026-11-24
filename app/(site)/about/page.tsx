@@ -10,7 +10,7 @@ import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "About Smart Squad Travels",
   description:
-    "Smart Squad Travels provides comfortable group transportation from Noida, Greater Noida and Delhi NCR — Force Traveller and Urbania for families, corporates, weddings and customized outstation journeys.",
+    "Smart Squad Travels arranges a Force Traveller or Urbania from Ghaziabad for families, offices, weddings and temple groups.",
   path: "/about",
   keywords: [
     "Smart Squad Travels",
@@ -47,8 +47,8 @@ export default async function AboutPage() {
             About {siteConfig.businessName}
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            {siteConfig.tagline} — reliable group travel support from Noida,
-            Greater Noida and Delhi NCR across North India.
+            Group vehicles from Panchsheel Greens, Ghaziabad. We can also pick
+            you up in Noida and Delhi.
           </p>
         </div>
       </section>
@@ -74,8 +74,8 @@ export default async function AboutPage() {
       <section className="section-pad bg-bg-light">
         <div className="container-site">
           <SectionHeader
-            title="Our Fleet Overview"
-            subtitle="Spacious, well-maintained vehicles for group travel — availability confirmed when you request a quote."
+            title="Our vehicles"
+            subtitle="We will confirm which one is free on your dates before you book."
           />
 
           <div className="grid gap-8 lg:grid-cols-2">
@@ -100,8 +100,7 @@ export default async function AboutPage() {
                   </p>
                   {!vehicle.owned ? (
                     <p className="mt-2 text-xs text-text-muted">
-                      Available through our travel network — customized quotes
-                      based on your route and dates.
+                      Arranged for your dates. The quote names the exact vehicle.
                     </p>
                   ) : null}
                   <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -134,15 +133,15 @@ export default async function AboutPage() {
               href="/fleet"
               className="text-sm font-semibold text-teal hover:underline"
             >
-              Explore full fleet →
+              Compare both vehicles →
             </Link>
           </div>
         </div>
       </section>
 
       <ContactCTA
-        heading="Plan your next group journey with us"
-        text="Share your travel dates, pickup location and destination. We will respond with a customized quotation for comfortable group transportation."
+        heading="Tell us your travel date"
+        text="Add the pickup address and where you are going. We will reply with a vehicle and a price for that trip."
       />
     </>
   );

@@ -180,7 +180,7 @@ export function MobileNavigation({ open, onClose }: MobileNavigationProps) {
             className={cn(buttonVariants({ variant: "teal", size: "lg" }), "w-full")}
             onClick={handleClose}
           >
-            Get a Quote
+            Get a quote
           </Link>
         </div>
       </div>

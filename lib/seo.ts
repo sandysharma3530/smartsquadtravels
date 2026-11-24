@@ -9,23 +9,20 @@ import type { CmsSite } from "@/lib/cms/types";
 import { resolveBrandLogo } from "@/lib/cms/brand-logo";
 
 export const defaultTitle =
-  "Smart Squad Travels | Luxury Force Traveller & Urbania Rental in Delhi NCR";
+  "Smart Squad Travels | Force Traveller & Urbania from Ghaziabad";
 
 export const defaultDescription =
-  "Smart Squad Travels provides luxury and comfortable Force Traveller & Urbania services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys from Delhi NCR.";
+  "Smart Squad Travels, based in Ghaziabad, arranges a Force Traveller or Force Urbania for families, offices, weddings and temple groups travelling from Noida and Delhi.";
 
 /** Light keyword set for secondary engines — keep natural, never stuff into body copy. */
 export const primaryKeywords = [
-  "Force Traveller rental Delhi NCR",
+  "Force Traveller hire Ghaziabad",
   "21 seater Traveller Noida",
-  "13 seater Urbania rental",
-  "Luxury Force Traveller rental",
-  "Force Urbania rental",
-  "group transportation Delhi NCR",
-  "outstation Traveller hire",
-  "wedding Traveller transport",
-  "corporate group travel Noida",
-  "airport transfer Traveller",
+  "Force Urbania from Ghaziabad",
+  "group vehicle Ghaziabad",
+  "outstation Traveller Noida",
+  "wedding guest vehicle Delhi",
+  "office group travel Ghaziabad",
 ] as const;
 
 function absoluteUrl(pathOrUrl: string) {
@@ -138,7 +135,7 @@ export function createMetadata({
     },
     other: {
       "geo.region": "IN-UP",
-      "geo.placename": "Noida, Delhi NCR",
+      "geo.placename": "Ghaziabad, Uttar Pradesh",
       "og:locale:alternate": "en",
     },
     ...(Object.keys(verification).length ? { verification } : {}),

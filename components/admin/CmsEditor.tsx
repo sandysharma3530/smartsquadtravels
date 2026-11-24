@@ -639,12 +639,14 @@ function DestinationsEditor({
                     next[index] = { ...item, suggestedDuration: e.target.value };
                     onChange(next);
                   }}
-                  hint="e.g. Typically 2–4 days — fully customizable"
+                  hint="e.g. Usually 2–4 days. Tell us if you want it shorter or longer."
                 />
               </div>
               <TextArea
                 label="Road travel notes"
                 value={item.roadTravelNotes}
+                rows={8}
+                hint="Press Enter for a new line. Leave a blank line to start a new paragraph."
                 onChange={(e) => {
                   const next = [...items];
                   next[index] = { ...item, roadTravelNotes: e.target.value };

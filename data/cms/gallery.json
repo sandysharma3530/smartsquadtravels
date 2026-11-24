@@ -14,15 +14,15 @@
     },
     {
       "id": "interiors",
-      "label": "Vehicle Interiors"
+      "label": "Inside the vehicle"
     },
     {
       "id": "exteriors",
-      "label": "Vehicle Exteriors"
+      "label": "Outside the vehicle"
     },
     {
       "id": "trip-locations",
-      "label": "Trip Locations"
+      "label": "Places we go"
     },
     {
       "id": "weddings",
@@ -30,11 +30,11 @@
     },
     {
       "id": "corporate",
-      "label": "Corporate Travel"
+      "label": "Office trips"
     },
     {
       "id": "religious",
-      "label": "Religious Journeys"
+      "label": "Temple trips"
     }
   ],
   "items": [
@@ -92,7 +92,7 @@
       "id": "g6",
       "src": "/images/destinations/nainital.jpg",
       "alt": "Group trip location near Nainital",
-      "caption": "Trip location — Nainital",
+      "caption": "Nainital",
       "categories": [
         "trip-locations"
       ]
@@ -101,7 +101,7 @@
       "id": "g7",
       "src": "/images/destinations/haridwar-rishikesh.jpg",
       "alt": "Religious journey destination Haridwar",
-      "caption": "Religious journey — Haridwar & Rishikesh",
+      "caption": "Haridwar and Rishikesh",
       "categories": [
         "trip-locations",
         "religious"
@@ -111,7 +111,7 @@
       "id": "g8",
       "src": "/images/destinations/jaipur.jpg",
       "alt": "Corporate outing destination Jaipur",
-      "caption": "Corporate travel — Jaipur",
+      "caption": "Jaipur",
       "categories": [
         "trip-locations",
         "corporate"
@@ -121,7 +121,7 @@
       "id": "g9",
       "src": "/images/destinations/mussoorie.jpg",
       "alt": "Wedding guest travel destination Mussoorie",
-      "caption": "Wedding travel context — Mussoorie hills",
+      "caption": "Mussoorie",
       "categories": [
         "trip-locations",
         "weddings"
@@ -141,7 +141,7 @@
       "id": "g11",
       "src": "/images/destinations/kedarnath.jpg",
       "alt": "Pilgrimage destination Kedarnath",
-      "caption": "Religious journey — Kedarnath region",
+      "caption": "Kedarnath",
       "categories": [
         "trip-locations",
         "religious"
@@ -151,7 +151,7 @@
       "id": "g12",
       "src": "/images/destinations/manali.jpg",
       "alt": "Outstation group travel to Manali",
-      "caption": "Trip location — Manali",
+      "caption": "Manali",
       "categories": [
         "trip-locations",
         "corporate"

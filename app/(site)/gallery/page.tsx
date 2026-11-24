@@ -6,9 +6,9 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Fleet & Trip Photo Gallery",
+  title: "Photos",
   description:
-    "Browse photos of Force Traveller and Force Urbania vehicles, trip locations, weddings, corporate travel and religious journeys with Smart Squad Travels.",
+    "Photos of the Force Traveller and Force Urbania, and a few of the places Smart Squad Travels drives to from Ghaziabad.",
   path: "/gallery",
 });
 
@@ -30,11 +30,11 @@ export default async function GalleryPage() {
             </ol>
           </nav>
           <h1 className="text-3xl font-bold text-white md:text-4xl">
-            Photo Gallery
+            Photos
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Explore our fleet, interiors, trip locations and group travel
-            moments. Tap any photo to open the lightbox.
+            A look inside and outside the vehicles, plus a few of the places we
+            drive to. Tap any picture to see it larger.
           </p>
         </div>
       </section>
@@ -43,8 +43,8 @@ export default async function GalleryPage() {
         <div className="container-site">
           <SectionHeader
             as="h2"
-            title="Browse by Category"
-            subtitle="Filter photos by vehicle type, interiors, exteriors, trip locations and more."
+            title="Browse the pictures"
+            subtitle="Filter by vehicle, inside, outside, or a place we drive to."
           />
           <GalleryGrid items={gallery.items} categories={gallery.categories} />
         </div>
